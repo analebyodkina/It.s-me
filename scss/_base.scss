@@ -12,6 +12,9 @@ html {
     max-width: 1150rem;
     padding: 0 15rem;
     margin-inline: auto;
+    @include tablet-small-768 {
+        padding: 0 32rem;
+    }
 }
 body {
     font-family: $ff;
@@ -51,9 +54,7 @@ button {
 //         margin-bottom: 40px;
 //     }
 // }
-.desc {
-    @include text($ff, 16rem, 26rem, 400, $color-text);    
-}
+
 // h3 {
 //     font-family: $ff-titles;
 //     color: $color-primary;
