@@ -1,0 +1,47 @@
+.header {
+    padding: 32rem 0;
+    border-bottom: 1rem solid $border;
+    
+    &__container {
+        @include flex-between;
+    }
+
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 15rem;
+        span {
+            display: block;
+            border-bottom: 2rem solid $color-icons;
+            &:first-child {
+                width: 56rem;
+            }
+            &:last-child {
+                width: 28rem;
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__ul {
+    }
+
+    .header__socials {
+        display: flex;
+        gap: 24rem;        
+            svg {
+                max-width: 30rem;
+                max-height: 30rem;
+                @include press;                
+            }
+            svg path, svg circle{
+                stroke: $color-text;
+            }
+                        
+        }
+    }
+
+

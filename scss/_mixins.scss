@@ -5,16 +5,9 @@
   font-weight: $fw;
   color: $color;
 }
-@mixin btn {
+@mixin press {
   display: inline-block;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: $white;
-  padding: 13px 18px;
-  border-radius: 5px;
-  border: 1px solid $color-primary;
-  background: $color-primary;
+  transition: $transition;
   &:active {
     animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both normal;
     @keyframes scale-down-center {

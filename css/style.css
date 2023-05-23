@@ -311,17 +311,23 @@ template {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+html {
+  font-size: 1px; }
+
 .wrapper {
   max-width: 1440rem;
   margin-inline: auto; }
 
 .container {
-  max-width: 1200rem;
+  max-width: 1150rem;
   padding: 0 15rem;
   margin-inline: auto; }
 
 body {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  color: #B1A6B7;
+  background: #041016;
+  font-size: 10rem; }
 
 .overflow-y-hidden {
   overflow-y: hidden; }
@@ -345,15 +351,73 @@ ul {
 button {
   padding: 0; }
 
-h3 {
-  font-family: "Bebas Neue";
-  color: #83418D; }
-
 @font-face {
   font-family: 'Bebas Neue';
   src: url("../fonts/BebasNeueBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal; }
+.header {
+  padding: 32rem 0;
+  border-bottom: 1rem solid rgba(147, 138, 152, 0.6); }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15rem; }
+    .header__burger span {
+      display: block;
+      border-bottom: 2rem solid #502D5D; }
+      .header__burger span:first-child {
+        width: 56rem; }
+      .header__burger span:last-child {
+        width: 28rem; }
+  .header__nav {
+    display: none; }
+  .header .header__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24rem; }
+    .header .header__socials svg {
+      max-width: 30rem;
+      max-height: 30rem;
+      display: inline-block;
+      -webkit-transition: 0.2s all ease-in-out;
+      transition: 0.2s all ease-in-out; }
+      .header .header__socials svg:active {
+        -webkit-animation: scale-down-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both normal;
+                animation: scale-down-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both normal; }
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0.93);
+    transform: scale(0.93); } }
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0.93);
+    transform: scale(0.93); } }
+    .header .header__socials svg path, .header .header__socials svg circle {
+      stroke: #B1A6B7; }
+
 @media (max-width: 992px) {
   .header__ul {
     position: fixed;

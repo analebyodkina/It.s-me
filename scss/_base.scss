@@ -1,17 +1,23 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+html {
+    font-size: 1px;
+}
 .wrapper {
     max-width: 1440rem;
     margin-inline: auto;
 }
 .container {
-    max-width: 1200rem;
+    max-width: 1150rem;
     padding: 0 15rem;
     margin-inline: auto;
 }
 body {
     font-family: $ff;
+    color: $color-text;
+    background: $main-bg;
+    font-size: 10rem;
 }
 .overflow-y-hidden {
 	overflow-y: hidden;
@@ -32,7 +38,7 @@ ul {
     list-style: none;
 }
 button {
-    padding: 0;
+    padding: 0;    
   }
 // .title {
 //     @include text($ff, 48rem, 56rem, 700, $color-text);
@@ -56,7 +62,7 @@ button {
 //         margin-bottom: 40px;
 //     }
 // }
-h3 {
-    font-family: $ff-titles;
-    color: $color-primary;
-}
+// h3 {
+//     font-family: $ff-titles;
+//     color: $color-primary;
+// }
