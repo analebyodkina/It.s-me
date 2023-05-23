@@ -47,6 +47,9 @@ button {
     @include text($ff-titles, 48rem, 48rem, 700, $color-primary);
     letter-spacing: 0.1em;
     text-transform: capitalize;
+    @include mobile-576 {
+        @include text($ff-titles, 32rem, 32rem, 700, $color-primary);
+    }
 }
 .subtitle {
     @include text($ff-titles, 36rem, 36rem, 700, $color-primary);
