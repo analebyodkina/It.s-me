@@ -43,19 +43,14 @@ ul {
 button {
     padding: 0;    
   }
-// .title {
-//     @include text($ff, 48rem, 56rem, 700, $color-text);
-//     margin-top: 111rem;
-//     margin-bottom: 70px;
-//     @include tablet-small-768{
-//         font-size: 35px;
-//         line-height: 45px;
-//         margin-top: 70px;
-//         margin-bottom: 40px;
-//     }
-// }
-
-// h3 {
-//     font-family: $ff-titles;
-//     color: $color-primary;
-// }
+.test-class {
+    svg path {
+        fill: transparent;
+        stroke:red;
+    }
+    &:hover {
+        svg path {
+            fill: $color-primary;
+        }
+    }
+}

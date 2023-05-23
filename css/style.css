@@ -354,6 +354,12 @@ ul {
 button {
   padding: 0; }
 
+.test-class svg path {
+  fill: transparent;
+  stroke: red; }
+.test-class:hover svg path {
+  fill: #83418D; }
+
 @font-face {
   font-family: 'Bebas Neue';
   src: url("../fonts/BebasNeueBold.woff2") format("woff2");
@@ -364,7 +370,11 @@ button {
   border-bottom: 1rem solid rgba(147, 138, 152, 0.6); }
   @media (max-width: 576px) {
     .header {
-      padding: 36rem 0; } }
+      padding-top: 34rem;
+      padding-bottom: 22rem;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -512,7 +522,8 @@ button {
         font-size: 16rem;
         line-height: 26rem;
         font-weight: 400;
-        color: #B1A6B7; } }
+        color: #B1A6B7;
+        margin-bottom: 0; } }
   .main-section__img {
     display: inline-block;
     position: absolute;
@@ -520,6 +531,13 @@ button {
     top: 0;
     z-index: -1;
     max-width: 850rem; }
+  @media (max-width: 576px) {
+    .main-section__btn svg {
+      max-width: 271rem;
+      position: relative;
+      bottom: 5rem; }
+      .main-section__btn svg path {
+        stroke: #83418D; } }
 
 .mob {
   display: none; }
