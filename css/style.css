@@ -419,23 +419,7 @@ button {
   gap: 16rem;
   opacity: 0; }
   .header__ul li {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 8rem; }
-    .header__ul li:before {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      background: #fff;
-      width: 11rem;
-      height: 11rem;
-      top: 0;
-      left: 0; }
+    position: relative; }
   .header__ul li a {
     font-family: "Poppins", sans-serif;
     font-size: 16rem;
@@ -446,9 +430,30 @@ button {
     text-transform: uppercase;
     -webkit-transition: 0.2s all ease-in-out;
     transition: 0.2s all ease-in-out;
-    position: relative; }
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 19rem; }
+    .header__ul li a:before {
+      content: url("../img/icons/list-icon.svg");
+      display: inline-block;
+      position: absolute;
+      padding-right: 8rem;
+      width: 11rem;
+      height: 11rem;
+      top: 0;
+      left: 0;
+      -webkit-transition: 0.2s all ease-in-out;
+      transition: 0.2s all ease-in-out;
+      opacity: 0; }
     .header__ul li a:hover {
       color: #83418D; }
+      .header__ul li a:hover:before {
+        opacity: 1; }
 
 .header__ul.active {
   opacity: 1;
@@ -587,7 +592,9 @@ li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 24rem; }
+    gap: 24rem;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out; }
     @media (max-width: 576px) {
       .header .header__socials {
         gap: 16rem; } }

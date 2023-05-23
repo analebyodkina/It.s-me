@@ -30,6 +30,7 @@
     .header__socials {
         display: flex;
         gap: 24rem;
+        transition: $transition;
         @include mobile-576 {
             gap: 16rem;
         }                

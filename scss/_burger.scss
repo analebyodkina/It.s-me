@@ -10,20 +10,8 @@
         opacity: 0;
         li {
             position: relative;
-            display: flex;
-            align-items: center;
-            gap: 8rem; 
-            &:before {
-                content: '';
-                display: inline-block;
-                position: absolute;
-                background: $color-white;
-                width: 11rem;
-                height: 11rem;
-                top: 0;
-                left: 0;
-                
-            } 
+             
+            
         }
         li a{
             @include text($ff, 16rem, 24rem, 400, $burger-links);            
@@ -31,10 +19,27 @@
             text-transform: uppercase;
             transition: $transition;
             position: relative;
-            
+            display: flex;
+            align-items: center;
+            padding-left: 19rem;
+            &:before {
+                content: url('../img/icons/list-icon.svg');
+                display: inline-block;
+                position: absolute;
+                padding-right: 8rem;
+                width: 11rem;
+                height: 11rem;
+                top: 0;
+                left: 0;
+                transition: $transition;
+                opacity: 0;              
+            } 
                        
             &:hover {
                 color: $color-primary;
+                &:before {
+                    opacity: 1;
+                }
             }
         }
     }
