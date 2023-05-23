@@ -1,6 +1,9 @@
 .accordion {
-    display: grid;
-    row-gap: 16rem;
+    &__container {
+        display: grid;
+        row-gap: 16rem;
+    }
+    
     &__item {
         border: 1.5rem solid $color-grey;
         border-radius: 5rem;

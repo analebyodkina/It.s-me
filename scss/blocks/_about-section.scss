@@ -22,9 +22,8 @@
     }    
     &__mob {
         @include text($ff, 15rem, 24rem, 400, $color-text);
-        margin-bottom: 84rem;
+        margin-bottom: 272rem;
     }
-
     &__desc {
         @include mobile-576 {
             display: none;
@@ -38,7 +37,7 @@
             min-width: 283rem;
             border-radius: 8rem;
             position: absolute;
-            top: 0;
+            top: -188rem;
             left:-32rem;
             img {
                 max-height: 156rem;
