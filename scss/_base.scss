@@ -51,17 +51,9 @@ button {
 //         margin-bottom: 40px;
 //     }
 // }
-// .desc {
-//     @include text($ff, 16px, 19px, 400, $color-text);
-//     margin-top: 111px;
-//     margin-bottom: 123px;
-//     margin-inline: auto;
-//     max-width: 837px;
-//     @include tablet-small-768 {        
-//         margin-top: 40px;
-//         margin-bottom: 40px;
-//     }
-// }
+.desc {
+    @include text($ff, 16rem, 26rem, 400, $color-text);    
+}
 // h3 {
 //     font-family: $ff-titles;
 //     color: $color-primary;

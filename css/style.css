@@ -351,14 +351,24 @@ ul {
 button {
   padding: 0; }
 
+.desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 16rem;
+  line-height: 26rem;
+  font-weight: 400;
+  color: #B1A6B7; }
+
 @font-face {
   font-family: 'Bebas Neue';
   src: url("../fonts/BebasNeueBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal; }
 .header {
-  padding: 32rem 0;
+  padding: 25rem 0;
   border-bottom: 1rem solid rgba(147, 138, 152, 0.6); }
+  @media (max-width: 576px) {
+    .header {
+      padding: 36rem 0; } }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,29 +402,20 @@ button {
     display: -ms-flexbox;
     display: flex;
     gap: 24rem; }
+    @media (max-width: 576px) {
+      .header .header__socials {
+        gap: 16rem; } }
     .header .header__socials svg {
       max-width: 30rem;
       max-height: 30rem;
-      display: inline-block;
       -webkit-transition: 0.2s all ease-in-out;
       transition: 0.2s all ease-in-out; }
-      .header .header__socials svg:active {
-        -webkit-animation: scale-down-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both normal;
-                animation: scale-down-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both normal; }
-@-webkit-keyframes scale-down-center {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-  100% {
-    -webkit-transform: scale(0.93);
-    transform: scale(0.93); } }
-@keyframes scale-down-center {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-  100% {
-    -webkit-transform: scale(0.93);
-    transform: scale(0.93); } }
+      .header .header__socials svg:hover path, .header .header__socials svg:hover circle {
+        stroke: #502D5D; }
+      @media (max-width: 576px) {
+        .header .header__socials svg {
+          max-width: 25rem;
+          max-height: 25rem; } }
     .header .header__socials svg path, .header .header__socials svg circle {
       stroke: #B1A6B7; }
 
@@ -465,5 +466,39 @@ button {
   .header__a:hover {
     text-decoration: underline;
     color: #fff; } }
+.main-section {
+  position: relative;
+  height: 100%; }
+  .main-section__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 199rem 15rem 154rem 15rem; }
+  .main-section__logo {
+    margin-bottom: 32rem; }
+  .main-section__desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 18rem;
+    line-height: 29rem;
+    font-weight: 400;
+    color: #B1A6B7;
+    letter-spacing: 0.1em;
+    margin-bottom: 48rem;
+    max-width: 540rem; }
+  .main-section__img {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,12 @@
 .header {
-    padding: 32rem 0;
+    padding: 25rem 0;
     border-bottom: 1rem solid $border;
-    
+    @include mobile-576 {
+        padding: 36rem 0;        
+    }     
     &__container {
         @include flex-between;
     }
-
     &__burger {
         display: flex;
         flex-direction: column;
@@ -31,17 +32,26 @@
 
     .header__socials {
         display: flex;
-        gap: 24rem;        
+        gap: 24rem;
+        @include mobile-576 {
+            gap: 16rem;
+        }                
             svg {
                 max-width: 30rem;
                 max-height: 30rem;
-                @include press;                
+                transition: $transition;                
+                &:hover {
+                    path, circle{
+                        stroke: $color-icons;
+                    }
+                }
+                @include mobile-576 {
+                    max-width: 25rem;
+                    max-height: 25rem;
+                }                               
             }
             svg path, svg circle{
                 stroke: $color-text;
-            }
-                        
+            }                        
         }
     }
-
-
