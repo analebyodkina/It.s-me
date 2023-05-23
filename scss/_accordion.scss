@@ -1,0 +1,54 @@
+.accordion {
+    display: grid;
+    row-gap: 16rem;
+    &__item {
+        border: 1.5rem solid $color-grey;
+        border-radius: 5rem;
+        padding: 21rem 16rem 0 16rem;
+        position: relative;        
+    }
+    &__header {
+        @include flex-between;
+        cursor: pointer;        
+    }
+    &__title {
+        @include text($ff-titles, 18rem, 18rem, 700, $color-text);        
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+    }
+    &__icon {
+        max-width: 30rem;
+    }
+    &__content {
+        overflow: hidden;
+        height: 0;
+        transition: all .25s ease;
+        max-width: 238rem;
+        padding-top: 16rem;
+    }
+    &__description {
+        @include text($ff, 12rem, 19rem, 400, $color-text);
+        letter-spacing: 0.1em;
+        padding-bottom: 21rem;        
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        li{
+            @include text($ff, 10rem, 16rem, 400, $color-text);        
+            letter-spacing: 0.1em; 
+        }
+        @include text($ff, 10rem, 16rem, 400, $color-text);        
+        letter-spacing: 0.1em;
+
+    }
+}
+.accordion-open{    
+    .accordion__icon{
+        transform: rotate(45deg);
+    }
+    .accordion__item {
+        border: 1.5rem solid transparent;
+    }    
+}

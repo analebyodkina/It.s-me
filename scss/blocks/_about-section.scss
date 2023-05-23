@@ -1,5 +1,4 @@
-.about-section {
-    
+.about-section {    
     padding-top: 120rem;
     padding-bottom: 120rem;
     display: flex;
@@ -82,6 +81,9 @@
 }
 .mission {
     margin-top: 64rem;
+    @include mobile-576 {
+        display: none;
+    }
     &__title {
         margin-bottom: 32rem;
     }
