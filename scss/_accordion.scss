@@ -1,4 +1,8 @@
 .accordion {
+    display: none;
+    @include tablet-992 {
+        display: inline-block;
+    }
     &__container {
         display: grid;
         row-gap: 16rem;
