@@ -1,54 +1,51 @@
-
-
-
-// <nav class="nav header__nav">
-//                     <ul class="header__ul" id="headerUl">
-//                         <li class="header__li"><a href="#" class="header__a _active">Home</a></li>
-//                         <li class="header__li"><a href="#" class="header__a">Service</a></li>
-//                         <li class="header__li"><a href="#" class="header__a">Doctors</a></li>
-//                         <li class="header__li"><a href="#" class="header__a">Gallery</a></li>
-//                         <li class="header__li"><a href="#" class="header__a">Contact</a></li>
-//                         <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span>
-//                     </ul>
-//                 </nav>
-//                 <div class="header__burger">
-//                     <span class="material-symbols-outlined" onclick="navToggle()">menu</span>
-//                 </div>
-
-
-@include tablet-992 {
     .header__ul {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        overflow-y: auto;
-        background: $color-primary;
-        left: 0;
-        top: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        transform: translateX(120%);
+        position: absolute;
+        left: 0; 
+        top: 30rem;      
+        padding-left: 88rem;              
         transition: $transition;
-        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        gap: 16rem;
+        opacity: 0;
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 8rem; 
+            &:before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                background: $color-white;
+                width: 11rem;
+                height: 11rem;
+                top: 0;
+                left: 0;
+                
+            } 
+        }
+        li a{
+            @include text($ff, 16rem, 24rem, 400, $burger-links);            
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: $transition;
+            position: relative;
+            
+                       
+            &:hover {
+                color: $color-primary;
+            }
+        }
     }
     .header__ul.active {
-        transform: translateX(0%);
+        opacity: 1;
         z-index: 99;
     }
-    .header__ul .material-symbols-outlined {
-        display: inline-block;
-        position: fixed;
-        top: 40px;
-        right: 40px;
-        color: $color-white;
-    }
-    .header__a {
-        color: $color-white;
-        font-size: 30px;
-        line-height: 46px;
-        font-weight: 600;
+    li a{
+        @include text($ff, 16rem, 24rem, 400, $burger-links);            
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
     }
     .header__a:hover {
         text-decoration: underline;
@@ -56,4 +53,4 @@
         
     }
 
-}
+
