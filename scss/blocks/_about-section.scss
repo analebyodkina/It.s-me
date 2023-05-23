@@ -35,8 +35,7 @@
         position: relative;
     }
     &__image {
-        @include tablet-992 {
-            
+        @include tablet-992 {            
             border-radius: 8rem;
             position: absolute;
             top: -188rem;
@@ -85,53 +84,49 @@
         margin-bottom: 32rem;
     }
 }
-.authors {
-    width: 100%;
-    @include flex-between;
-    gap: 56rem;
-    @include tablet-992 {
-        display: none;
-    }
-    &__image {
-        max-width: 346rem;
-        img {
-            width: 100%;
-        }
-        @include mobile-576 {
-            display: none;
-        }
-    }
+// .authors {
+//     grid-column-start: span 2;
+//     width: 100%;
+//     @include flex-between;
+//     gap: 56rem;
+    
+//     &__image {
+        
+//         @include mobile-576 {
+//             display: none;
+//         }
+//     }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        gap: 8rem;
-    }
+//     &__item {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 8rem;
+//     }
 
-    &__name {        
-        @include text($ff, 20rem, 30rem, 500, $color-primary);
-        letter-spacing: 0.1em;
-        transition: $transition;
-        &:after {
-			content: "";
-			background: $color-primary;
-			display: block;
-			height: 1rem;
-			opacity: 0;            
-			position: relative;
-			top: 3rem;
-			-webkit-transition: width .3s ease-in-out;
-			-moz--transition: width .3s ease-in-out;
-			transition: width .3s ease-in-out;
-		}
-		&:hover:after, &:focus:after {
-    	opacity: 1;
-		}
-    }
+//     &__name {        
+//         @include text($ff, 20rem, 30rem, 500, $color-primary);
+//         letter-spacing: 0.1em;
+//         transition: $transition;
+//         &:after {
+// 			content: "";
+// 			background: $color-primary;
+// 			display: block;
+// 			height: 1rem;
+// 			opacity: 0;            
+// 			position: relative;
+// 			top: 3rem;
+// 			-webkit-transition: width .3s ease-in-out;
+// 			-moz--transition: width .3s ease-in-out;
+// 			transition: width .3s ease-in-out;
+// 		}
+// 		&:hover:after, &:focus:after {
+//     	opacity: 1;
+// 		}
+//     }
 
-    &__desc {
-        @include text($ff, 18rem, 27rem, 500, $color-text);
-        letter-spacing: 0.1em;
-    }
-}
+//     &__desc {
+//         @include text($ff, 18rem, 27rem, 500, $color-text);
+//         letter-spacing: 0.1em;
+//     }
+// }
 

@@ -34,22 +34,22 @@
         @include mobile-576 {
             gap: 16rem;
         }                
-            svg {
-                max-width: 30rem;
-                max-height: 30rem;
-                transition: $transition;                
-                &:hover {
-                    path, circle{
-                        stroke: $color-icons;
-                    }
+        svg {
+            max-width: 30rem;
+            max-height: 30rem;
+            transition: $transition;                
+            &:hover {
+                path, circle{
+                    stroke: $color-icons;
                 }
-                @include mobile-576 {
-                    max-width: 25rem;
-                    max-height: 25rem;
-                }                               
             }
-            svg path, svg circle{
-                stroke: $color-text;
-            }                        
+            @include mobile-576 {
+                max-width: 25rem;
+                max-height: 25rem;
+            }                               
         }
+        svg path, svg circle{
+            stroke: $color-text;
+        }                        
     }
+}

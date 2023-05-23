@@ -418,8 +418,6 @@ button {
           flex-direction: column;
   gap: 16rem;
   opacity: 0; }
-  .header__ul li {
-    position: relative; }
   .header__ul li a {
     font-family: "Poppins", sans-serif;
     font-size: 16rem;
@@ -458,19 +456,6 @@ button {
 .header__ul.active {
   opacity: 1;
   z-index: 99; }
-
-li a {
-  font-family: "Poppins", sans-serif;
-  font-size: 16rem;
-  line-height: 24rem;
-  font-weight: 400;
-  color: #E6D3E9;
-  letter-spacing: 0.1em;
-  text-transform: uppercase; }
-
-.header__a:hover {
-  text-decoration: underline;
-  color: #fff; }
 
 .accordion {
   display: none; }
@@ -671,13 +656,26 @@ li a {
     top: 0;
     z-index: -1;
     max-width: 850rem; }
-  @media (max-width: 576px) {
-    .main-section__btn svg {
-      max-width: 271rem;
-      position: relative;
-      bottom: 5rem; }
-      .main-section__btn svg path {
-        stroke: #83418D; } }
+  .main-section__btn {
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    padding: 24.5rem 32rem 24.5rem 0; }
+    .main-section__btn:hover {
+      padding: 0; }
+      .main-section__btn:hover svg {
+        display: none; }
+      .main-section__btn:hover .btn-hover {
+        display: inline-block; }
+    @media (max-width: 576px) {
+      .main-section__btn svg {
+        max-width: 271rem;
+        position: relative;
+        bottom: 5rem; }
+        .main-section__btn svg path {
+          stroke: #83418D; } }
+
+.btn-hover {
+  display: none; }
 
 .about-section {
   padding-top: 120rem;
@@ -763,6 +761,7 @@ li a {
     margin-bottom: 32rem; }
 
 .authors {
+  grid-column-start: span 2;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -774,16 +773,9 @@ li a {
       -ms-flex-align: center;
           align-items: center;
   gap: 56rem; }
-  @media (max-width: 992px) {
-    .authors {
+  @media (max-width: 576px) {
+    .authors__image {
       display: none; } }
-  .authors__image {
-    max-width: 346rem; }
-    .authors__image img {
-      width: 100%; }
-    @media (max-width: 576px) {
-      .authors__image {
-        display: none; } }
   .authors__item {
     display: -webkit-box;
     display: -ms-flexbox;
