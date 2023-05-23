@@ -354,11 +354,41 @@ ul {
 button {
   padding: 0; }
 
-.test-class svg path {
-  fill: transparent;
-  stroke: red; }
-.test-class:hover svg path {
-  fill: #83418D; }
+.title {
+  font-family: "Bebas Neue";
+  font-size: 48rem;
+  line-height: 48rem;
+  font-weight: 700;
+  color: #83418D;
+  letter-spacing: 0.1em;
+  text-transform: capitalize; }
+
+.subtitle {
+  font-family: "Bebas Neue";
+  font-size: 36rem;
+  line-height: 36rem;
+  font-weight: 700;
+  color: #83418D;
+  text-transform: capitalize;
+  letter-spacing: 0.1em; }
+
+.desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 16rem;
+  line-height: 26rem;
+  font-weight: 400;
+  color: #B1A6B7;
+  letter-spacing: 0.1em; }
+
+.mob {
+  display: none; }
+  @media (max-width: 576px) {
+    .mob {
+      display: inline-block; } }
+
+@media (max-width: 576px) {
+  .main {
+    display: none; } }
 
 @font-face {
   font-family: 'Bebas Neue';
@@ -539,14 +569,40 @@ button {
       .main-section__btn svg path {
         stroke: #83418D; } }
 
-.mob {
-  display: none; }
-  @media (max-width: 576px) {
-    .mob {
-      display: inline-block; } }
+.about-section {
+  padding-top: 120rem;
+  padding-bottom: 120rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40rem; }
+  .about-section__title {
+    margin-bottom: 80rem; }
 
-@media (max-width: 576px) {
-  .main {
-    display: none; } }
+.objectives {
+  margin-top: 64rem;
+  position: relative; }
+  .objectives__title {
+    margin-bottom: 32rem; }
+  .objectives__image {
+    position: absolute;
+    margin-right: 28rem; }
+    .objectives__image img {
+      max-height: 439rem; }
+  .objectives__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32rem;
+    padding-left: 53rem; }
+    .objectives__list li {
+      max-width: 485rem; }
 
 /*# sourceMappingURL=style.css.map */

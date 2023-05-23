@@ -58,15 +58,5 @@
         }
     }
 }
-.mob {
-    display: none;    
-    @include mobile-576 {
-        display: inline-block;        
-    }
-}
-.main {
-    @include mobile-576 {
-        display: none;
-    }
-}
+
 

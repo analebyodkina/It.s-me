@@ -1,0 +1,62 @@
+.about-section {
+    padding-top: 120rem;
+    padding-bottom: 120rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 40rem;
+    &__left {
+    }
+
+    &__title {
+        margin-bottom: 80rem;
+    }
+
+    &__desc {
+    }    
+
+    &__right {
+    }
+
+    &__image {
+    }
+
+    &__mission {
+    }
+}
+
+.title {
+}
+.objectives {
+    margin-top: 64rem;
+    position: relative;
+    &__title {
+        margin-bottom: 32rem;
+    }
+    &__image {
+        position: absolute;
+        margin-right: 28rem;
+        img {
+            max-height: 439rem;
+        }
+    }
+
+    &__list {        
+        display: flex;
+        flex-direction: column;
+        gap: 32rem;
+        padding-left: 53rem;
+        li {
+            max-width: 485rem;
+        }
+    }
+}
+.subtitle {
+}
+.mission {
+
+    &__title {
+    }
+
+    &__desc {
+    }
+}

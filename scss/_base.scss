@@ -43,14 +43,28 @@ ul {
 button {
     padding: 0;    
   }
-.test-class {
-    svg path {
-        fill: transparent;
-        stroke:red;
+.title {
+    @include text($ff-titles, 48rem, 48rem, 700, $color-primary);
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+}
+.subtitle {
+    @include text($ff-titles, 36rem, 36rem, 700, $color-primary);
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+}
+.desc {
+    @include text($ff, 16rem, 26rem, 400, $color-text);
+    letter-spacing: 0.1em;
+}
+.mob {
+    display: none;    
+    @include mobile-576 {
+        display: inline-block;        
     }
-    &:hover {
-        svg path {
-            fill: $color-primary;
-        }
+}
+.main {
+    @include mobile-576 {
+        display: none;
     }
 }
