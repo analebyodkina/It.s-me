@@ -1,5 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html {
     font-size: 1px;
@@ -19,7 +20,7 @@ html {
 body {
     font-family: $ff;
     color: $color-text;
-    background: $color-grey-light;
+    background: $main-bg;
     font-size: 10rem;
 }
 .overflow-y-hidden {

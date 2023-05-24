@@ -309,7 +309,8 @@ template {
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 html {
   font-size: 1px; }
@@ -329,7 +330,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #B1A6B7;
-  background: #858585;
+  background: #041016;
   font-size: 10rem; }
 
 .overflow-y-hidden {
@@ -962,8 +963,6 @@ button {
     gap: 40rem; }
   .beauty-section__card {
     border: 5px solid red; }
-    .beauty-section__card:nth-child(3) {
-      border: 5px solid red; }
 
 .reflections-section {
   padding-bottom: 120rem; }
@@ -1086,3 +1085,63 @@ button {
       line-height: 21rem;
       font-weight: 400;
       color: #B1A6B7; } }
+
+.footer {
+  padding: 59rem 0 40rem 0;
+  border-top: 1rem solid rgba(147, 138, 152, 0.6); }
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32rem; }
+  .footer__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer__logo {
+    max-width: 124rem;
+    margin-right: 69rem; }
+  .footer__ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 66rem;
+            column-gap: 66rem;
+    row-gap: 16rem;
+    margin-right: 75rem; }
+  .footer__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 24rem; }
+    .footer__socials svg {
+      max-width: 40rem;
+      -webkit-transition: 0.2s all ease-in-out;
+      transition: 0.2s all ease-in-out; }
+  .footer__title {
+    font-family: "Bebas Neue";
+    font-size: 24rem;
+    line-height: 24rem;
+    font-weight: 700;
+    color: #502D5D;
+    letter-spacing: 0.1em;
+    text-transform: lowercase; }
+  .footer__image {
+    max-width: 274rem; }
+  .footer__copyright {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-family: "Bebas Neue";
+    font-size: 16rem;
+    line-height: 19rem;
+    font-weight: 700;
+    color: #321E3C;
+    text-transform: uppercase; }
+  .footer__design {
+    margin: 0 8rem 0 22rem; }

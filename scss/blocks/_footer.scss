@@ -1,0 +1,55 @@
+.footer {
+    padding: 59rem 0 40rem 0;
+    border-top: 1rem solid $border;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 32rem;
+
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__logo {
+        max-width: 124rem;
+        margin-right: 69rem;
+    }
+
+    &__ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 66rem;
+        row-gap: 16rem;
+        margin-right: 75rem;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 24rem;
+        svg {
+            max-width: 40rem;
+            transition: $transition            
+        }
+    }
+
+    &__title {
+        @include text($ff-titles, 24rem, 24rem, 700, $color-icons);
+        letter-spacing: 0.1em;
+        text-transform: lowercase;        
+    }
+    &__image {
+        max-width: 274rem;
+    }
+    &__copyright {
+        align-self: flex-end;
+        @include text($ff-titles, 16rem, 19rem, 700, $copyright);
+        text-transform: uppercase;
+    }
+
+    &__design {
+        margin: 0 8rem 0 22rem;
+    }
+}

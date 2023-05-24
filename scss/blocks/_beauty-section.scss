@@ -4,7 +4,6 @@
     &__title {
         text-align: center;        
     }
-
     &__quote {        
         max-width: 542rem;
         margin-bottom: 93rem;
@@ -25,11 +24,11 @@
         gap: 40rem;
         
     }
-    &__card { 
+    &__card {        
         border: 5px solid red;    
-        &:nth-child(3) {
-            border: 5px solid red;
-        }        
+        // &:nth-child(3) {
+        //     border: 5px solid red;
+        // }        
     } 
 }
 
