@@ -31,7 +31,12 @@
         gap: 24rem;
         svg {
             max-width: 40rem;
-            transition: $transition            
+            transition: $transition;
+            &:hover {
+                path, circle{
+                    stroke: $color-text;
+                }
+            }            
         }
     }
 

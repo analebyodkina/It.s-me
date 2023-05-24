@@ -346,9 +346,10 @@ a {
 
 img {
   max-width: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: auto; }
+  height: 100%; }
 
 ul {
   list-style: none; }
@@ -742,11 +743,10 @@ button {
     z-index: -1;
     max-width: 850rem; }
   .main-section__btn {
+    width: 378rem;
+    height: 197rem;
     -webkit-transition: 0.2s all ease-in-out;
-    transition: 0.2s all ease-in-out;
-    padding: 24.5rem 32rem 24.5rem 0; }
-    .main-section__btn a {
-      display: inline-block; }
+    transition: 0.2s all ease-in-out; }
     .main-section__btn:hover {
       padding: 0; }
       .main-section__btn:hover svg {
@@ -962,7 +962,15 @@ button {
     grid-auto-flow: dense;
     gap: 40rem; }
   .beauty-section__card {
-    border: 5px solid red; }
+    overflow-y: hidden; }
+    .beauty-section__card:nth-child(4n - 1) {
+      -webkit-transform: translateY(-172rem);
+              transform: translateY(-172rem);
+      margin-bottom: -172px; }
+    .beauty-section__card._small {
+      max-height: 478rem; }
+    .beauty-section__card._big {
+      max-height: 650rem; }
 
 .reflections-section {
   padding-bottom: 120rem; }
@@ -980,7 +988,12 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 315rem; }
+    max-width: 315rem;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out; }
+    .reflections-section__item:hover {
+      -webkit-box-shadow: 0 0 4px #653570;
+              box-shadow: 0 0 4px #653570; }
   .reflections-section__image {
     margin-bottom: 24rem; }
   .reflections-section__slogan {
@@ -1124,6 +1137,8 @@ button {
       max-width: 40rem;
       -webkit-transition: 0.2s all ease-in-out;
       transition: 0.2s all ease-in-out; }
+      .footer__socials svg:hover path, .footer__socials svg:hover circle {
+        stroke: #B1A6B7; }
   .footer__title {
     font-family: "Bebas Neue";
     font-size: 24rem;

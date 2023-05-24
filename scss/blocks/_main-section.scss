@@ -11,7 +11,6 @@
             padding: 410rem 32rem 2rem 32rem;                              
         }
     }
-
     &__logo {
         margin-bottom: 32rem;
         display: inline-block;
@@ -25,7 +24,6 @@
             top: 116rem;                              
         }
     }
-
     &__desc {
         @include text($ff, 18rem, 29rem, 400, $color-text);
         letter-spacing: 0.1em;
@@ -46,11 +44,10 @@
         max-width: 850rem;	
     }
     &__btn {
-        a {
-            display: inline-block;
-        }        
+        width: 378rem;
+        height: 197rem;      
         transition: $transition;
-        padding: 24.5rem 32rem 24.5rem 0;
+        // padding: 24.5rem 32rem 24.5rem 0;
         &:hover {
             padding: 0;
             svg {

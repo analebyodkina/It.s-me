@@ -9,7 +9,11 @@
         border: 1px solid $card-border;
         display: flex;        
         flex-direction: column; 
-        max-width: 315rem;           
+        max-width: 315rem;
+        transition: $transition; 
+        &:hover {
+            box-shadow: 0 0 4px #653570;            
+        }          
     }
     &__image {
         margin-bottom: 24rem;       

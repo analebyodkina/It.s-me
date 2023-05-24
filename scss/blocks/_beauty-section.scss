@@ -24,11 +24,18 @@
         gap: 40rem;
         
     }
-    &__card {        
-        border: 5px solid red;    
-        // &:nth-child(3) {
-        //     border: 5px solid red;
-        // }        
+    &__card {
+        overflow-y: hidden;
+        &:nth-child(4n - 1) {
+            transform: translateY(-172rem);
+            margin-bottom: -172px;
+        }
+        &._small {
+            max-height: 478rem;
+        } 
+        &._big {
+            max-height: 650rem;
+        }        
     } 
 }
 

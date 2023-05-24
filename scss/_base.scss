@@ -36,8 +36,9 @@ a {
 }
 img {
     max-width: 100%;
+    width: 100%;
     object-fit: cover;
-    height: auto;
+    height: 100%;
 }
 ul {
     list-style: none;
