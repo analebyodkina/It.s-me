@@ -17,13 +17,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    &.disabled {
-        background: rgba(255, 255, 255, 0.2) !important;
+    &:hover {
+        background: transparent;
     }    
     span { 
+        color: transparent;
         &::before {
-            content: url('../img/icons/arrow-left-slider.svg');
-                      
+            content: url('../img/icons/arrow-left-slider.svg');                      
         }
     }
 }
@@ -40,6 +40,9 @@
     z-index: 999;    
     display: flex;
     justify-content: space-between;
+    &:hover {
+        background: transparent;
+    }
     @include tablet-992 {
         display: none;
     }
@@ -49,10 +52,14 @@
     margin-right: 16rem;    
     width: 16rem;
     height: 16rem;
+    
     span {        
         background: transparent;
         position: relative;
         margin: 0;
+        &:hover {
+            background: transparent;
+        }
         &::before {
             content: url('../img/icons/circle.svg');
             display: block;

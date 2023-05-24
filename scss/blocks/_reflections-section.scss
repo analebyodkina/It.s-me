@@ -2,20 +2,14 @@
     padding-bottom: 120rem;
     @include tablet-992 {
         padding-bottom: 56rem;
-    }    
-
-    &__list {
     }
-
-    &__carousel {
-    }
-
     &__item {
         padding: 32rem;
         background: $card-bg;
         border: 1px solid $card-border;
-        display: flex;
-        flex-direction: column;        
+        display: flex;        
+        flex-direction: column; 
+        max-width: 315rem;           
     }
     &__image {
         margin-bottom: 24rem;       
