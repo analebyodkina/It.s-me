@@ -1,0 +1,28 @@
+.beauty-section {
+    padding-top: 128rem;
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__quote {        
+        max-width: 542rem;
+        margin-bottom: 93rem;
+    }
+    &__text {
+        @include text($ff, 19rem, 30rem, 400, $color-text);
+        letter-spacing: 0.1em;
+    }
+    &__caption {
+        @include text($ff, 19rem, 28rem, 400, $color-text);
+        text-align: end;        
+        letter-spacing: 0.1em;
+    }
+
+    &__row {
+    }
+}
+.container {
+}
+.title {
+}
