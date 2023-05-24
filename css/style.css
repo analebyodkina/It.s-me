@@ -565,12 +565,10 @@ button {
   .owl-carousel .owl-nav button.owl-prev.disabled, .owl-carousel .owl-nav button.owl-next.disabled {
     background: rgba(255, 255, 255, 0.2) !important; }
   .owl-carousel .owl-nav button.owl-prev span::before, .owl-carousel .owl-nav button.owl-next span::before {
-    content: url("../img/icons/arrow-left-slider.svg");
-    max-width: 32rem; }
+    content: url("../img/icons/arrow-left-slider.svg"); }
 
 .owl-carousel .owl-nav button.owl-next span::before {
-  content: url("../img/icons/arrow-right-slider.svg");
-  max-width: 32rem; }
+  content: url("../img/icons/arrow-right-slider.svg"); }
 
 .owl-theme .owl-nav {
   position: absolute;
@@ -584,6 +582,28 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.owl-theme .owl-dots .owl-dot {
+  margin-top: 64rem;
+  margin-right: 16rem;
+  width: 16rem;
+  height: 16rem; }
+  .owl-theme .owl-dots .owl-dot span {
+    background: transparent;
+    position: relative;
+    margin: 0; }
+    .owl-theme .owl-dots .owl-dot span::before {
+      content: url("../img/icons/circle.svg");
+      display: block;
+      width: 16rem;
+      height: 16rem; }
+  .owl-theme .owl-dots .owl-dot.active span {
+    background: transparent;
+    width: 16rem;
+    content: url("../img/icons/circle-dot.svg");
+    display: block;
+    width: 16rem;
+    height: 16rem; }
 
 .header {
   padding: 25rem 0;

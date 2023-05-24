@@ -4,17 +4,8 @@
 .owl-carousel .owl-stage-outer {
     border-radius: 0;
     position: relative;
-    margin: 0 62px 0 62px;
-    // overflow-x: hidden;
-    // // overflow-y: initial;    
-    // height: 483rem;
-    // padding-bottom: 50rem;    
-    // @include tablet-992 {
-    //     height: unset;
-    //     padding-bottom: 0;
-    // }
+    margin: 0 62px 0 62px;   
 }
-
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
     width: 36rem;
     height: 30rem;
@@ -29,14 +20,13 @@
     span { 
         &::before {
             content: url('../img/icons/arrow-left-slider.svg');
-            max-width: 32rem;            
+                      
         }
     }
 }
 .owl-carousel .owl-nav button.owl-next {
     span::before {
-        content: url('../img/icons/arrow-right-slider.svg');
-        max-width: 32rem;
+        content: url('../img/icons/arrow-right-slider.svg');        
     }
 }
 .owl-theme .owl-nav {
@@ -47,4 +37,31 @@
     z-index: 999;    
     display: flex;
     justify-content: space-between;
+}
+.owl-theme .owl-dots .owl-dot {
+    margin-top: 64rem;
+    margin-right: 16rem;    
+    width: 16rem;
+    height: 16rem;
+    span {        
+        background: transparent;
+        position: relative;
+        margin: 0;
+        &::before {
+            content: url('../img/icons/circle.svg');
+            display: block;
+            width: 16rem;
+            height: 16rem;
+                       
+        }
+        
+    }
+    &.active span{
+        background: transparent;
+        width: 16rem;
+        content: url('../img/icons/circle-dot.svg');
+        display: block;
+        width: 16rem;
+        height: 16rem;
+    }
 }
