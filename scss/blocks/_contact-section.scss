@@ -1,20 +1,13 @@
 .contact-section {    
     position: relative;
-    padding-bottom: 120rem;
-    &__left {
-        max-width: 540rem;
-    }
+    padding-bottom: 120rem;    
     &__desc {
         margin-bottom: 40rem;
+        max-width: 540rem;
     }
-
-    &__right {
-    }
-
     &__image {
         position: absolute;
-        bottom: 120rem;
-        
+        bottom: 120rem;        
     }
 }
 .contacts {
@@ -22,30 +15,21 @@
     flex-direction: column;
     gap: 24rem;
     align-items: flex-end;    
-    padding: 0 0 60rem 56rem;    
+    padding-bottom: 60rem;    
     &__image {
         position: absolute;
-        left: 0;        
+        right: 355rem;        
         max-height: 337rem;
         svg {
             height: 337px;
         }
     }
-
     &__item {
-        max-width: 297rem;
-        // &:first-child {
-        //     max-width: 252rem; 
-        // }
+        max-width: 297rem;        
     }
-
     &__title {
         @include text($ff-titles, 18rem, 18rem, 700, $color-primary);        
         letter-spacing: 0.1em;
         margin-bottom: 16rem;
-    }
-
-    &__desc {
-        
-    }
+    }    
 }

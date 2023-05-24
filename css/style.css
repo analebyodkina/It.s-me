@@ -1000,10 +1000,9 @@ button {
 .contact-section {
   position: relative;
   padding-bottom: 120rem; }
-  .contact-section__left {
-    max-width: 540rem; }
   .contact-section__desc {
-    margin-bottom: 40rem; }
+    margin-bottom: 40rem;
+    max-width: 540rem; }
   .contact-section__image {
     position: absolute;
     bottom: 120rem; }
@@ -1020,10 +1019,10 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0 0 60rem 56rem; }
+  padding-bottom: 60rem; }
   .contacts__image {
     position: absolute;
-    left: 0;
+    right: 355rem;
     max-height: 337rem; }
     .contacts__image svg {
       height: 337px; }
