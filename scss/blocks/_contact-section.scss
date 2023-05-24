@@ -1,28 +1,56 @@
 .contact-section {    
     position: relative;
-    padding-bottom: 120rem;    
+    padding-bottom: 120rem;
+    display: flex;
+    flex-direction: column;
+    @include tablet-992 {
+        align-items: flex-start;
+        padding-bottom: 236rem;
+    }     
     &__desc {
         margin-bottom: 40rem;
         max-width: 540rem;
+        @include tablet-992 {
+            @include text($ff, 14rem, 21rem, 400, $color-text);
+        } 
     }
     &__image {
         position: absolute;
-        bottom: 120rem;        
+        bottom: 120rem; 
+        @include tablet-992 {            
+            right: 0;
+            bottom: 56rem;
+            border-radius: 5rem 0 0 0;
+            img {
+                border-radius: 5rem 0 0 0;
+                max-height: 148rem; 
+                width: 283rem;
+                
+            } 
+        }        
     }
 }
 .contacts {
+    align-self: flex-end;     
     display: flex;
     flex-direction: column;
-    gap: 24rem;
-    align-items: flex-end;    
-    padding-bottom: 60rem;    
+    gap: 24rem;           
+    padding: 0 0 60rem 56rem;
+    @include tablet-992 {
+        align-self: flex-start;
+        padding-left: 31rem;
+    }    
+    
+    position: relative;
     &__image {
         position: absolute;
-        right: 355rem;        
+        left: 0;        
         max-height: 337rem;
-        svg {
-            height: 337px;
-        }
+        @include tablet-992 {
+            svg {
+                height: 291rem;
+            }
+        }        
     }
     &__item {
         max-width: 297rem;        
@@ -31,5 +59,10 @@
         @include text($ff-titles, 18rem, 18rem, 700, $color-primary);        
         letter-spacing: 0.1em;
         margin-bottom: 16rem;
+    }
+    &__desc {        
+        @include tablet-992 {
+            @include text($ff, 14rem, 21rem, 400, $color-text);
+        } 
     }    
 }

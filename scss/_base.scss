@@ -49,8 +49,9 @@ button {
     letter-spacing: 0.1em;
     text-transform: capitalize;
     margin-bottom: 80rem;
-    @include mobile-576 {
+    @include tablet-992 {
         @include text($ff-titles, 32rem, 32rem, 700, $color-primary);
+        margin-bottom: 40rem;
     }
 }
 .subtitle {

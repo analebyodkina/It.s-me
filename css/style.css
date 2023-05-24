@@ -364,13 +364,14 @@ button {
   letter-spacing: 0.1em;
   text-transform: capitalize;
   margin-bottom: 80rem; }
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     .title {
       font-family: "Bebas Neue";
       font-size: 32rem;
       line-height: 32rem;
       font-weight: 700;
-      color: #83418D; } }
+      color: #83418D;
+      margin-bottom: 40rem; } }
 
 .subtitle {
   font-family: "Bebas Neue";
@@ -999,15 +1000,46 @@ button {
 
 .contact-section {
   position: relative;
-  padding-bottom: 120rem; }
+  padding-bottom: 120rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (max-width: 992px) {
+    .contact-section {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding-bottom: 236rem; } }
   .contact-section__desc {
     margin-bottom: 40rem;
     max-width: 540rem; }
+    @media (max-width: 992px) {
+      .contact-section__desc {
+        font-family: "Poppins", sans-serif;
+        font-size: 14rem;
+        line-height: 21rem;
+        font-weight: 400;
+        color: #B1A6B7; } }
   .contact-section__image {
     position: absolute;
     bottom: 120rem; }
+    @media (max-width: 992px) {
+      .contact-section__image {
+        right: 0;
+        bottom: 56rem;
+        border-radius: 5rem 0 0 0; }
+        .contact-section__image img {
+          border-radius: 5rem 0 0 0;
+          max-height: 148rem;
+          width: 283rem; } }
 
 .contacts {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,16 +1048,20 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24rem;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 60rem; }
+  padding: 0 0 60rem 56rem;
+  position: relative; }
+  @media (max-width: 992px) {
+    .contacts {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      padding-left: 31rem; } }
   .contacts__image {
     position: absolute;
-    right: 355rem;
+    left: 0;
     max-height: 337rem; }
-    .contacts__image svg {
-      height: 337px; }
+    @media (max-width: 992px) {
+      .contacts__image svg {
+        height: 291rem; } }
   .contacts__item {
     max-width: 297rem; }
   .contacts__title {
@@ -1036,3 +1072,10 @@ button {
     color: #83418D;
     letter-spacing: 0.1em;
     margin-bottom: 16rem; }
+  @media (max-width: 992px) {
+    .contacts__desc {
+      font-family: "Poppins", sans-serif;
+      font-size: 14rem;
+      line-height: 21rem;
+      font-weight: 400;
+      color: #B1A6B7; } }
