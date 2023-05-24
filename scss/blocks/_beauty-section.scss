@@ -19,25 +19,19 @@
         text-align: end;        
         letter-spacing: 0.1em;
     }
-
-    &__row {
+    &__row {        
         display: grid;
         grid-template: auto auto / repeat(2, 1fr);
         grid-auto-flow: dense;            
         gap: 40rem;
         
     }
-    &__card {       
+    &__card { 
+        border: 5px solid red;    
         &:nth-child(3) {
-            border: 1px solid red;
+            border: 5px solid red;
         }        
     } 
-    
-        
-    
-    
 }
-.big {
-    border: 5px solid red;
-}
+
 

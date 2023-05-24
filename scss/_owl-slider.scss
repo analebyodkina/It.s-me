@@ -1,0 +1,95 @@
+.owl-item.active {
+    // transition: $transition;
+}
+// @include min-tablet {
+//     .owl-item.active {
+//         &:first-child{ 
+//             transform: translateY(0);
+//         }    
+//         &:nth-child(3n+3) {
+//             transform: translateY(0);
+//         }    
+//         &:nth-child(3n+2){
+//             transform: translateY(58rem);
+//         }
+//         &:nth-child(3n){
+//             transform: translateY(116rem);
+//         }
+//     }
+// }
+.owl-carousel .owl-stage-outer {
+    border-radius: 0;
+    // overflow-x: hidden;
+    // // overflow-y: initial;    
+    // height: 483rem;
+    // padding-bottom: 50rem;    
+    // @include tablet-992 {
+    //     height: unset;
+    //     padding-bottom: 0;
+    // }
+}
+.owl-theme .owl-nav {
+    // margin-top: 50rem;
+}
+.owl-dots {
+    // @include tablet-992 {
+    //     display: none;
+    // }
+}
+.owl-theme .owl-dots .owl-dot {
+    // span {
+    //     width: 8rem;
+    //     height: 8rem;
+    //     border-radius: 50%;
+    //     background: $color-dots;
+    // }
+    // &.active span{
+    //     width: 16rem;
+    //     background: $color-primary;
+    //     border-radius: 10rem;
+    // }
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    // bottom: 0;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+    // width: 38rem;
+    // height: 38rem;
+    // background: rgba(255, 255, 255, 0.2);
+    // border-radius: 50%;
+    // display: inline-flex;
+    // align-items: center;
+    // justify-content: center;
+    // &.disabled {
+    //     background: rgba(255, 255, 255, 0.2) !important;
+    // }
+    // &:hover {
+    //     background: $color-primary;
+    // }
+    // span {
+    //     font-size: 1px;
+    //     position: relative;
+    //     &::before {
+    //         content: '\e5cb';
+    //         font-family: 'Material Symbols Outlined';
+    //         font-weight: normal;
+    //         font-style: normal;
+    //         font-size: 24rem;
+    //         line-height: 1;
+    //         letter-spacing: normal;
+    //         text-transform: none;
+    //         display: inline-block;
+    //         white-space: nowrap;
+    //         word-wrap: normal;
+    //         direction: ltr;
+    //         -webkit-font-feature-settings: 'liga';
+    //         -webkit-font-smoothing: antialiased;
+    //     }
+    // }
+}
+.owl-carousel .owl-nav button.owl-next {
+    // span::before {
+    //     content: '\e5cc';
+
+    // }
+}
