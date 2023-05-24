@@ -26,6 +26,7 @@
     }
     &__card {
         overflow-y: hidden;
+        // select 3,7,11 etc
         &:nth-child(4n - 1) {
             transform: translateY(-172rem);
             margin-bottom: -172px;

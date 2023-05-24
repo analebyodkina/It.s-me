@@ -331,7 +331,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: #B1A6B7;
   background: #041016;
-  font-size: 10rem; }
+  font-size: 10rem;
+  overflow-x: hidden; }
 
 .overflow-y-hidden {
   overflow-y: hidden; }
@@ -1102,6 +1103,9 @@ button {
 .footer {
   padding: 59rem 0 40rem 0;
   border-top: 1rem solid rgba(147, 138, 152, 0.6); }
+  @media (max-width: 992px) {
+    .footer {
+      padding: 31rem 0; } }
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1111,20 +1115,39 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 32rem; }
+    @media (max-width: 992px) {
+      .footer__container {
+        gap: 28rem; } }
   .footer__body {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    gap: 72rem; }
+    @media (max-width: 992px) {
+      .footer__body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 15px; } }
   .footer__logo {
-    max-width: 124rem;
-    margin-right: 69rem; }
+    max-width: 124rem; }
+    .footer__logo img {
+      height: auto; }
+    @media (max-width: 992px) {
+      .footer__logo {
+        max-width: 80rem;
+        margin-bottom: 8rem; } }
   .footer__ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 66rem;
             column-gap: 66rem;
-    row-gap: 16rem;
-    margin-right: 75rem; }
+    row-gap: 16rem; }
+    @media (max-width: 576px) {
+      .footer__ul {
+        -webkit-column-gap: 50rem;
+                column-gap: 50rem; } }
   .footer__socials {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1135,10 +1158,14 @@ button {
     gap: 24rem; }
     .footer__socials svg {
       max-width: 40rem;
+      height: auto;
       -webkit-transition: 0.2s all ease-in-out;
       transition: 0.2s all ease-in-out; }
       .footer__socials svg:hover path, .footer__socials svg:hover circle {
         stroke: #B1A6B7; }
+      @media (max-width: 576px) {
+        .footer__socials svg {
+          max-width: 25rem; } }
   .footer__title {
     font-family: "Bebas Neue";
     font-size: 24rem;
@@ -1146,10 +1173,25 @@ button {
     font-weight: 700;
     color: #502D5D;
     letter-spacing: 0.1em;
-    text-transform: lowercase; }
+    text-transform: lowercase;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+    @media (max-width: 576px) {
+      .footer__title {
+        font-family: "Bebas Neue";
+        font-size: 16rem;
+        line-height: 16rem;
+        font-weight: 700;
+        color: #502D5D; } }
   .footer__image {
     max-width: 274rem; }
   .footer__copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-item-align: end;
         align-self: flex-end;
     font-family: "Bebas Neue";
@@ -1158,5 +1200,22 @@ button {
     font-weight: 700;
     color: #321E3C;
     text-transform: uppercase; }
+    @media (max-width: 992px) {
+      .footer__copyright {
+        -ms-flex-item-align: initial;
+            align-self: initial; } }
+    .footer__copyright img {
+      height: auto; }
+      @media (max-width: 576px) {
+        .footer__copyright img {
+          max-width: 71rem; } }
   .footer__design {
     margin: 0 8rem 0 22rem; }
+    @media (max-width: 992px) {
+      .footer__design {
+        margin-left: auto;
+        font-family: "Bebas Neue";
+        font-size: 10rem;
+        line-height: 12rem;
+        font-weight: 700;
+        color: #321E3C; } }
