@@ -39,12 +39,11 @@ $('.owl-carousel').owlCarousel({
     lazyLoad:true,
     loop:true,
     margin:20,
-    nav: true,
-      
+    nav: true,      
     responsive : {
       // breakpoint from 0 up
       0 : {
-          items:1,
+          items:1.3,
           
       },      
       576 : {

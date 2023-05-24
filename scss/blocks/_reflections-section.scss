@@ -1,5 +1,8 @@
 .reflections-section {
     padding-bottom: 120rem;
+    @include tablet-992 {
+        padding-bottom: 56rem;
+    }
     &__title {
         margin-bottom: 81rem;
     }
@@ -16,7 +19,7 @@
         border: 1px solid $card-border;
         display: flex;
         flex-direction: column;
-        max-width: 325rem;
+        
     }
     &__image {
         margin-bottom: 24rem;
@@ -28,6 +31,10 @@
         text-transform: capitalize;
         margin-bottom: 16rem;
     }
+    &__desc {
+        flex-grow: 1;
+    }
+    
     &__link {
         @include text($ff, 16rem, 26rem, 400, $color-grey-light);
         letter-spacing: 0.1em;

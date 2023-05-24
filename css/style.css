@@ -547,6 +547,9 @@ button {
   border-radius: 0;
   position: relative;
   margin: 0 62px 0 62px; }
+  @media (max-width: 992px) {
+    .owl-carousel .owl-stage-outer {
+      margin: 0; } }
 
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
   width: 36rem;
@@ -582,6 +585,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 992px) {
+    .owl-theme .owl-nav {
+      display: none; } }
 
 .owl-theme .owl-dots .owl-dot {
   margin-top: 64rem;
@@ -956,6 +962,9 @@ button {
 
 .reflections-section {
   padding-bottom: 120rem; }
+  @media (max-width: 992px) {
+    .reflections-section {
+      padding-bottom: 56rem; } }
   .reflections-section__title {
     margin-bottom: 81rem; }
   .reflections-section__item {
@@ -968,8 +977,7 @@ button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 325rem; }
+            flex-direction: column; }
   .reflections-section__image {
     margin-bottom: 24rem; }
   .reflections-section__slogan {
@@ -981,6 +989,10 @@ button {
     letter-spacing: 0.1em;
     text-transform: capitalize;
     margin-bottom: 16rem; }
+  .reflections-section__desc {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
   .reflections-section__link {
     font-family: "Poppins", sans-serif;
     font-size: 16rem;

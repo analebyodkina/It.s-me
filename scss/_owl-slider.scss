@@ -4,7 +4,10 @@
 .owl-carousel .owl-stage-outer {
     border-radius: 0;
     position: relative;
-    margin: 0 62px 0 62px;   
+    margin: 0 62px 0 62px;
+    @include tablet-992 {
+        margin: 0;
+    }   
 }
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
     width: 36rem;
@@ -37,6 +40,9 @@
     z-index: 999;    
     display: flex;
     justify-content: space-between;
+    @include tablet-992 {
+        display: none;
+    }
 }
 .owl-theme .owl-dots .owl-dot {
     margin-top: 64rem;
