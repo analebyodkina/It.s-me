@@ -859,7 +859,8 @@ button {
         color: #B1A6B7; } }
 
 .beauty-section {
-  padding-top: 128rem; }
+  padding-top: 128rem;
+  padding-bottom: 121rem; }
   .beauty-section__title {
     text-align: center;
     margin-bottom: 80px; }
@@ -881,5 +882,20 @@ button {
     color: #B1A6B7;
     text-align: end;
     letter-spacing: 0.1em; }
+  .beauty-section__row {
+    display: grid;
+    grid-template: auto auto/repeat(2, 1fr);
+    grid-auto-flow: dense;
+    gap: 40rem; }
+  .beauty-section__card:nth-child(3) {
+    border: 1px solid red; }
+
+.big {
+  border: 5px solid red; }
+
+.reflections-section {
+  padding-bottom: 120rem; }
+  .reflections-section__title {
+    margin-bottom: 81rem; }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,8 +7,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">		
-	
-	
+	<link rel="stylesheet"  href="css/owl.carousel.css">
+	<link rel="stylesheet"  href="css/owl.theme.default.css">	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -188,22 +188,42 @@
 			  </blockquote>
 			  
 			  <div class="beauty-section__row">									
-                    <div className="beauty-section__card">
-                        <img src="img/Larysa/Larysa2.png" alt="Larysa photo1">                 
+                    <div className="beauty-section__card ">
+                        <img className="beauty-section__small" src="img/Larysa/Larysa2.png" alt="Larysa photo1">                 
+                    </div>
+					<div className="beauty-section__card big">
+                        <img className="beauty-section__big" src="img/Ingrid/Ingrid2.png" alt="Ingrid photo1">                 
                     </div>
 					<div className="beauty-section__card">
-                        <img src="img/Ingrid/Ingrid2.png" alt="Ingrid photo1">                 
+                        <img className="beauty-section__big" src="img/Natalie/Natalie3.png" alt="Natalie photo1">                 
                     </div>
 					<div className="beauty-section__card">
-                        <img src="img/Natalie/Natalie3.png" alt="Natalie photo1">                 
+                        <img className="beauty-section__small" src="img/woman.png" alt="woman photo">                 
                     </div>
-					<div className="beauty-section__card">
-                        <img src="img/woman.png" alt="woman photo">                 
-                    </div>
-			  </div>
-			  
+			  </div>	  
 
 		</section>
+		<section class="reflections-section">
+			<h2 class="title reflections-section__title" id="refl">Reflections</h2>
+			<div class="reflections-section__list">
+				<div class="owl-carousel owl-theme reflections-section__carousel">
+					<div class="reflections-section__item item">
+						<img src="img/reflect1.png" alt="love self" width="336" height="253">
+					</div>
+					<div class="reflections-section__item item">
+						<img src="img/reflect2.png" alt="reflection" width="336" height="253">
+					</div>
+					<div class="portfolio-section__item item">
+						<img src="img/reflect3.png" alt="girl looking in the mirror" width="336" height="253">
+					</div>
+					
+		
+				</div>
+	
+			</div>
+
+		</section>
+		
 
 		
 
@@ -236,6 +256,8 @@
 	crossorigin="anonymous"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
+
+	
 	
 </body>
 </html>
