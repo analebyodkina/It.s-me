@@ -38,21 +38,23 @@ const toggleItem = (item) =>{
 $('.owl-carousel').owlCarousel({    
     lazyLoad:true,
     loop:true,
-    margin:24,    
+    margin:20,
+    nav: true,
+      
     responsive : {
       // breakpoint from 0 up
       0 : {
           items:1,
-          nav: true
+          
       },      
       576 : {
           items:2, 
-          nav: true       
+                
       },
       // breakpoint from 992 up      
       992 : {
         items:3,
-        nav: false
+        
       }
 
     }

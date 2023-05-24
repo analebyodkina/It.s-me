@@ -16,7 +16,7 @@
         border: 1px solid $card-border;
         display: flex;
         flex-direction: column;
-        
+        max-width: 325rem;
     }
     &__image {
         margin-bottom: 24rem;
@@ -33,16 +33,5 @@
         letter-spacing: 0.1em;
     }
 }
-.title {
-}
-.owl-carousel {
-}
-.owl-theme {
-}
-.item {
-}
-.portfolio-section {
 
-    &__item {
-    }
-}
+
