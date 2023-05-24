@@ -2,10 +2,7 @@
     padding-bottom: 120rem;
     @include tablet-992 {
         padding-bottom: 56rem;
-    }
-    &__title {
-        margin-bottom: 81rem;
-    }
+    }    
 
     &__list {
     }
@@ -18,12 +15,10 @@
         background: $card-bg;
         border: 1px solid $card-border;
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
     &__image {
-        margin-bottom: 24rem;
-       
+        margin-bottom: 24rem;       
     }
     &__slogan {
         @include text($ff-titles, 16rem, 16rem, 700, $color-primary);

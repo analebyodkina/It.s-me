@@ -329,7 +329,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #B1A6B7;
-  background: #858585;
+  background: #041016;
   font-size: 10rem; }
 
 .overflow-y-hidden {
@@ -362,7 +362,8 @@ button {
   font-weight: 700;
   color: #83418D;
   letter-spacing: 0.1em;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  margin-bottom: 80rem; }
   @media (max-width: 576px) {
     .title {
       font-family: "Bebas Neue";
@@ -770,11 +771,9 @@ button {
       grid-template-columns: 1fr;
       gap: 0;
       margin-inline: auto; } }
-  .about-section__title {
-    margin-bottom: 80rem; }
-    @media (max-width: 992px) {
-      .about-section__title {
-        margin-bottom: 40rem; } }
+  @media (max-width: 992px) {
+    .about-section__title {
+      margin-bottom: 40rem; } }
   .about-section__mob {
     display: none;
     font-family: "Poppins", sans-serif;
@@ -930,8 +929,7 @@ button {
   padding-top: 128rem;
   padding-bottom: 121rem; }
   .beauty-section__title {
-    text-align: center;
-    margin-bottom: 80px; }
+    text-align: center; }
   .beauty-section__quote {
     max-width: 542rem;
     margin-bottom: 93rem; }
@@ -965,8 +963,6 @@ button {
   @media (max-width: 992px) {
     .reflections-section {
       padding-bottom: 56rem; } }
-  .reflections-section__title {
-    margin-bottom: 81rem; }
   .reflections-section__item {
     padding: 32rem;
     background: #0E1320;
@@ -1001,4 +997,43 @@ button {
     color: #858585;
     letter-spacing: 0.1em; }
 
-/*# sourceMappingURL=style.css.map */
+.contact-section {
+  position: relative;
+  padding-bottom: 120rem; }
+  .contact-section__left {
+    max-width: 540rem; }
+  .contact-section__desc {
+    margin-bottom: 40rem; }
+  .contact-section__image {
+    position: absolute;
+    bottom: 120rem; }
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 0 60rem 56rem; }
+  .contacts__image {
+    position: absolute;
+    left: 0;
+    max-height: 337rem; }
+    .contacts__image svg {
+      height: 337px; }
+  .contacts__item {
+    max-width: 297rem; }
+  .contacts__title {
+    font-family: "Bebas Neue";
+    font-size: 18rem;
+    line-height: 18rem;
+    font-weight: 700;
+    color: #83418D;
+    letter-spacing: 0.1em;
+    margin-bottom: 16rem; }

@@ -1,0 +1,51 @@
+.contact-section {    
+    position: relative;
+    padding-bottom: 120rem;
+    &__left {
+        max-width: 540rem;
+    }
+    &__desc {
+        margin-bottom: 40rem;
+    }
+
+    &__right {
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 120rem;
+        
+    }
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+    align-items: flex-end;    
+    padding: 0 0 60rem 56rem;    
+    &__image {
+        position: absolute;
+        left: 0;        
+        max-height: 337rem;
+        svg {
+            height: 337px;
+        }
+    }
+
+    &__item {
+        max-width: 297rem;
+        // &:first-child {
+        //     max-width: 252rem; 
+        // }
+    }
+
+    &__title {
+        @include text($ff-titles, 18rem, 18rem, 700, $color-primary);        
+        letter-spacing: 0.1em;
+        margin-bottom: 16rem;
+    }
+
+    &__desc {
+        
+    }
+}
