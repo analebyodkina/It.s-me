@@ -21,8 +21,7 @@
         display: grid;
         grid-template: auto auto / repeat(2, 1fr);
         grid-auto-flow: dense;            
-        gap: 40rem;
-        
+        gap: 40rem;        
     }
     &__card {
         overflow-y: hidden;
@@ -39,5 +38,3 @@
         }        
     } 
 }
-
-

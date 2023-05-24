@@ -316,7 +316,7 @@ html {
   font-size: 1px; }
 
 .wrapper {
-  max-width: 1440rem;
+  max-width: 1920rem;
   margin-inline: auto; }
 
 .container {
@@ -747,20 +747,30 @@ button {
     width: 378rem;
     height: 197rem;
     -webkit-transition: 0.2s all ease-in-out;
-    transition: 0.2s all ease-in-out; }
-    .main-section__btn:hover {
-      padding: 0; }
-      .main-section__btn:hover svg {
-        display: none; }
-      .main-section__btn:hover .btn-hover {
-        display: inline-block; }
-    @media (max-width: 576px) {
-      .main-section__btn svg {
-        max-width: 271rem;
-        position: relative;
-        bottom: 5rem; }
-        .main-section__btn svg path {
-          stroke: #83418D; } }
+    transition: 0.2s all ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main-section__btn:hover svg {
+      display: none; }
+    .main-section__btn:hover .btn-hover {
+      display: inline-block; }
+    @media (max-width: 992px) {
+      .main-section__btn {
+        width: 271rem;
+        height: 141rem;
+        -webkit-box-align: initial;
+            -ms-flex-align: initial;
+                align-items: initial; }
+        .main-section__btn svg {
+          max-width: 255rem;
+          position: relative;
+          bottom: 5rem; }
+          .main-section__btn svg svg path {
+            stroke: #83418D; } }
 
 .btn-hover {
   display: none; }
