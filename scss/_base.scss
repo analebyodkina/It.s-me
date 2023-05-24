@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 a {
     text-decoration: none;
+    display: inline-block;
 }
 img {
     max-width: 100%;
@@ -55,10 +56,14 @@ button {
     @include text($ff-titles, 36rem, 36rem, 700, $color-primary);
     text-transform: capitalize;
     letter-spacing: 0.1em;
+    @include tablet-992 {
+        @include text($ff-titles, 20rem, 20rem, 700, $color-icons);
+    }
 }
 .desc {
     @include text($ff, 16rem, 26rem, 400, $color-text);
     letter-spacing: 0.1em;
+    
 }
 .mob {
     display: none;    

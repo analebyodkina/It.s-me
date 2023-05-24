@@ -1,16 +1,26 @@
-.authors {
-    grid-column-start: span 2;
+.authors {    
     width: 100%;
     @include flex-between;
     gap: 56rem;
-    
-    &__image {
-        
-        @include mobile-576 {
+    padding-bottom: 112rem;
+    @include tablet-992 {
+        gap: 32rem;
+        align-items: flex-start; 
+        padding-bottom: 56rem; 
+    }    
+    &__image {        
+        @include tablet-992 {
             display: none;
         }
     }
-
+    &__info {
+        display: flex;
+        gap: 56rem;
+         @include tablet-992 {
+            flex-direction: column;
+            gap: 16rem;
+        }
+    }
     &__item {
         display: flex;
         flex-direction: column;
@@ -36,10 +46,16 @@
 		&:hover:after, &:focus:after {
     	opacity: 1;
 		}
+        @include tablet-992 {
+            @include text($ff, 16rem, 24rem, 500, $color-primary);
+        }
     }
 
     &__desc {
         @include text($ff, 18rem, 27rem, 500, $color-text);
         letter-spacing: 0.1em;
+        @include tablet-992 {
+            @include text($ff, 14rem, 21rem, 500, $color-text);
+        }
     }
 }

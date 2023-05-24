@@ -1,13 +1,13 @@
 .about-section {    
     padding-top: 120rem;
-    padding-bottom: 120rem;
+    padding-bottom: 56rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(400rem, 540rem));
     gap: 40rem;
     flex-wrap: wrap;
     @include tablet-992{
         padding-top: 56rem;
-        padding-bottom: 112rem;
+        padding-bottom: 32rem;
         grid-template-columns: 1fr;
         gap: 0;
         margin-inline: auto;
@@ -84,49 +84,3 @@
         margin-bottom: 32rem;
     }
 }
-// .authors {
-//     grid-column-start: span 2;
-//     width: 100%;
-//     @include flex-between;
-//     gap: 56rem;
-    
-//     &__image {
-        
-//         @include mobile-576 {
-//             display: none;
-//         }
-//     }
-
-//     &__item {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 8rem;
-//     }
-
-//     &__name {        
-//         @include text($ff, 20rem, 30rem, 500, $color-primary);
-//         letter-spacing: 0.1em;
-//         transition: $transition;
-//         &:after {
-// 			content: "";
-// 			background: $color-primary;
-// 			display: block;
-// 			height: 1rem;
-// 			opacity: 0;            
-// 			position: relative;
-// 			top: 3rem;
-// 			-webkit-transition: width .3s ease-in-out;
-// 			-moz--transition: width .3s ease-in-out;
-// 			transition: width .3s ease-in-out;
-// 		}
-// 		&:hover:after, &:focus:after {
-//     	opacity: 1;
-// 		}
-//     }
-
-//     &__desc {
-//         @include text($ff, 18rem, 27rem, 500, $color-text);
-//         letter-spacing: 0.1em;
-//     }
-// }
-
