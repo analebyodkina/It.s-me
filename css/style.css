@@ -347,10 +347,9 @@ a {
 
 img {
   max-width: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%; }
+  height: auto; }
 
 ul {
   list-style: none; }
@@ -402,11 +401,11 @@ button {
 
 .mob {
   display: none; }
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     .mob {
       display: inline-block; } }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .main {
     display: none; } }
 
@@ -945,10 +944,17 @@ button {
         color: #B1A6B7; } }
 
 .beauty-section {
-  padding-top: 128rem;
+  padding: 128rem 15rem 121rem 15rem;
   padding-bottom: 121rem; }
-  .beauty-section__title {
+  @media (max-width: 992px) {
+    .beauty-section {
+      padding: 56rem 32rem; } }
+  .beauty-section .beauty-section__title {
+    margin-inline: auto;
     text-align: center; }
+    @media (max-width: 992px) {
+      .beauty-section .beauty-section__title {
+        max-width: 286rem; } }
   .beauty-section__quote {
     max-width: 542rem;
     margin-bottom: 93rem; }
@@ -972,16 +978,29 @@ button {
     grid-template: auto auto/repeat(2, 1fr);
     grid-auto-flow: dense;
     gap: 40rem; }
+    @media (max-width: 992px) {
+      .beauty-section__row {
+        grid-template-columns: 1fr;
+        gap: 32rem;
+        justify-items: center; } }
   .beauty-section__card {
+    cursor: pointer;
     overflow-y: hidden; }
     .beauty-section__card:nth-child(4n - 1) {
       -webkit-transform: translateY(-172rem);
               transform: translateY(-172rem);
       margin-bottom: -172px; }
-    .beauty-section__card._small {
-      max-height: 478rem; }
-    .beauty-section__card._big {
-      max-height: 650rem; }
+      @media (max-width: 992px) {
+        .beauty-section__card:nth-child(4n - 1) {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          margin: auto; } }
+    @media (max-width: 992px) {
+      .beauty-section__card:nth-child(4) {
+        display: none; } }
+    @media (max-width: 992px) {
+      .beauty-section__card img {
+        max-height: 281rem; } }
 
 .reflections-section {
   padding-bottom: 120rem; }
@@ -1207,7 +1226,7 @@ button {
     font-family: "Bebas Neue";
     font-size: 16rem;
     line-height: 19rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #321E3C;
     text-transform: uppercase; }
     @media (max-width: 992px) {
@@ -1227,5 +1246,5 @@ button {
         font-family: "Bebas Neue";
         font-size: 10rem;
         line-height: 12rem;
-        font-weight: 700;
+        font-weight: 400;
         color: #321E3C; } }

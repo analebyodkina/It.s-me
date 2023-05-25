@@ -1,8 +1,15 @@
 .beauty-section {
-    padding-top: 128rem;
+    padding: 128rem 15rem 121rem 15rem;
     padding-bottom: 121rem;
-    &__title {
-        text-align: center;        
+    @include tablet-992 {
+        padding: 56rem 32rem;         
+    }
+    .beauty-section__title {
+        margin-inline: auto;
+        text-align: center;
+        @include tablet-992 { 
+            max-width: 286rem;                              
+        }        
     }
     &__quote {        
         max-width: 542rem;
@@ -21,20 +28,42 @@
         display: grid;
         grid-template: auto auto / repeat(2, 1fr);
         grid-auto-flow: dense;            
-        gap: 40rem;        
+        gap: 40rem; 
+        @include tablet-992 {
+            grid-template-columns: 1fr;
+            gap: 32rem;
+            justify-items: center;          
+        } 
+            
     }
     &__card {
+        cursor: pointer;
         overflow-y: hidden;
+        // &._small {
+        //     max-height: 478rem;
+        // } 
+        // &._big {
+        //     max-height: 650rem;
+        // } 
         // select 3,7,11 etc
         &:nth-child(4n - 1) {
             transform: translateY(-172rem);
             margin-bottom: -172px;
-        }
-        &._small {
-            max-height: 478rem;
-        } 
-        &._big {
-            max-height: 650rem;
+            @include tablet-992 {
+                transform: translateY(0);
+                margin: auto;
+            }
         }        
+        &:nth-child(4) {
+            @include tablet-992 {
+                display: none;
+            }
+        }
+        @include tablet-992 {
+            img {
+                max-height: 281rem;                
+            }
+            }
+        }
+
     } 
-}

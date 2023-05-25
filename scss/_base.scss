@@ -36,10 +36,9 @@ a {
     display: inline-block;
 }
 img {
-    max-width: 100%;
-    width: 100%;
+    max-width: 100%;    
     object-fit: cover;
-    height: 100%;
+    height: auto;
 }
 ul {
     list-style: none;
@@ -71,12 +70,12 @@ button {
 }
 .mob {
     display: none;    
-    @include mobile-576 {
+    @include tablet-992 {
         display: inline-block;        
     }
 }
 .main {
-    @include mobile-576 {
+    @include tablet-992 {
         display: none;
     }
 }
