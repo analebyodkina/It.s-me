@@ -17,12 +17,14 @@
     display: none;
 }
 .flickity-prev-next-button.previous {
+    left: -70px;
     &::before {
         content: url('../../img/icons/arrow-left-slider.svg');
         display: block;        
     }
 }
 .flickity-prev-next-button.next {
+    right: -70px;
     &::before {
         content: url('../../img/icons/arrow-right-slider.svg');        
     }
@@ -32,5 +34,8 @@
 }
 .flickity-button:hover, .flickity-button:focus {
     background: transparent;
-    box-shadow: 0rem;
+    
+}
+.flickity-button:focus {
+    box-shadow: none;
 }
