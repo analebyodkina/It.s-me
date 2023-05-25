@@ -18,12 +18,10 @@
         height: 100%;        
     }
     &__body { 
+        align-self: center;
         background: url(../../img/unsplash.png) center no-repeat;
         padding: 50rem 88rem 20rem 88rem;              
-        max-width: 852rem;
-        width: 100%;
-        // height: 99%;        
-        // overflow-y: scroll;
+        max-width: 852rem;         
         position: relative;        
         @include tablet-992 {
             padding: 31rem 31rem 46rem 31rem;
@@ -49,6 +47,9 @@
     } 
     &__image img {
         height: 602rem;
+        @include tablet-992 {
+            height: auto;
+        }
     }  
     &__close {
         font-size: 20rem;
@@ -56,7 +57,7 @@
         top: 20rem;
         right: 20rem;
         cursor: pointer;
-        @include tablet-small-768 {
+        @include tablet-992 {
             display: none;
         }
     }

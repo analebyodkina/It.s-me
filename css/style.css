@@ -648,10 +648,11 @@ button {
     width: 100%;
     height: 100%; }
   .modal__body {
+    -ms-flex-item-align: center;
+        align-self: center;
     background: url(../../img/unsplash.png) center no-repeat;
     padding: 50rem 88rem 20rem 88rem;
     max-width: 852rem;
-    width: 100%;
     position: relative; }
     @media (max-width: 992px) {
       .modal__body {
@@ -690,13 +691,16 @@ button {
         color: #000; } }
   .modal__image img {
     height: 602rem; }
+    @media (max-width: 992px) {
+      .modal__image img {
+        height: auto; } }
   .modal__close {
     font-size: 20rem;
     position: absolute;
     top: 20rem;
     right: 20rem;
     cursor: pointer; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .modal__close {
         display: none; } }
 
@@ -705,7 +709,7 @@ button {
           transform: scale(100%); }
 
 .flickity-enabled.is-draggable .flickity-viewport {
-  height: 100%;
+  max-height: auto;
   width: 100%; }
 
 .flickity-page-dots {
@@ -715,6 +719,9 @@ button {
   background: transparent;
   width: 40rem;
   height: 31rem; }
+  @media (max-width: 992px) {
+    .flickity-prev-next-button {
+      display: none; } }
 
 .flickity-prev-next-button .flickity-button-icon {
   display: none; }
@@ -734,9 +741,7 @@ button {
   display: none; }
 
 .flickity-button:hover, .flickity-button:focus {
-  background: transparent; }
-
-.flickity-button:focus {
+  background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none; }
 

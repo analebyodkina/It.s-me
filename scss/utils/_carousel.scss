@@ -1,9 +1,6 @@
 .flickity-enabled.is-draggable .flickity-viewport {
-    height: 100%;
+    max-height: auto;
     width: 100%;    
-}
-.gallery-cell {
-    // padding: 0 100px;
 }
 .flickity-page-dots {
     display: none;
@@ -11,7 +8,10 @@
 .flickity-prev-next-button {
     background: transparent;
     width: 40rem;
-    height: 31rem;    
+    height: 31rem;
+    @include tablet-992 {
+        display: none;
+    }    
 }
 .flickity-prev-next-button .flickity-button-icon {
     display: none;
@@ -34,8 +34,5 @@
 }
 .flickity-button:hover, .flickity-button:focus {
     background: transparent;
-    
-}
-.flickity-button:focus {
-    box-shadow: none;
+    box-shadow: none;    
 }

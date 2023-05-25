@@ -61,16 +61,14 @@ $('.owl-carousel').owlCarousel({
 var currentYear = new Date().getFullYear();
 document.getElementById("footer-year").innerHTML = currentYear;
 
-// modal window
+// modal window -1
 const modalWindow = document.getElementById('modal')
 
 function modal(){ 
     modalWindow.classList.add('active');
     document.getElementById("html").classList.add("overflow-hidden");
-    document.getElementById("body").classList.add("overflow-hidden");
-    
+    document.getElementById("body").classList.add("overflow-hidden");    
 }
-
 // modal to close by click on black field
 modalWindow.addEventListener('click', function(){
     modalWindow.classList.remove('active');
@@ -92,10 +90,72 @@ modalWindow.querySelector('.modal__body').addEventListener('click', function(eve
   event.stopPropagation();
 })
 
+
+// modal gallery of photos
 $('.main-gallery').flickity({
     // options
     cellAlign: 'left',
     contain: true
   });
+
+
+// modal window -2
+const modalWindow2 = document.getElementById('modal2')
+
+function modal2(){ 
+    modalWindow2.classList.add('active');
+    document.getElementById("html").classList.add("overflow-hidden");
+    document.getElementById("body").classList.add("overflow-hidden");    
+}
+// modal to close by click on black field
+modalWindow2.addEventListener('click', function(){
+    modalWindow2.classList.remove('active');
+    document.getElementById("html").classList.remove("overflow-hidden");
+    document.getElementById("body").classList.remove("overflow-hidden");
+});
+const closeModal2 = document.getElementById('closeModal');
+closeModal2.addEventListener('click', () => {
+    modalWindow2.classList.remove('active');
+    document.getElementById("html").classList.remove("overflow-hidden");
+    document.getElementById("body").classList.remove("overflow-hidden");
+});
+
+modalWindow2.querySelector('.modal__body').addEventListener('click', function(event){  
+  event.stopPropagation();
+})
+
+modalWindow2.querySelector('.modal__body').addEventListener('click', function(event){  
+  event.stopPropagation();
+})
+
+
+// modal window -3
+const modalWindow3 = document.getElementById('modal3')
+
+function modal3(){ 
+    modalWindow3.classList.add('active');
+    document.getElementById("html").classList.add("overflow-hidden");
+    document.getElementById("body").classList.add("overflow-hidden");    
+}
+// modal to close by click on black field
+    modalWindow3.addEventListener('click', function(){
+    modalWindow3.classList.remove('active');
+    document.getElementById("html").classList.remove("overflow-hidden");
+    document.getElementById("body").classList.remove("overflow-hidden");
+});
+const closeModal3 = document.getElementById('closeModal');
+    closeModal3.addEventListener('click', () => {
+    modalWindow3.classList.remove('active');
+    document.getElementById("html").classList.remove("overflow-hidden");
+    document.getElementById("body").classList.remove("overflow-hidden");
+});
+
+modalWindow3.querySelector('.modal__body').addEventListener('click', function(event){  
+  event.stopPropagation();
+})
+
+modalWindow3.querySelector('.modal__body').addEventListener('click', function(event){  
+  event.stopPropagation();
+})
 
 
