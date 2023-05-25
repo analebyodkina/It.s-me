@@ -63,7 +63,7 @@
             }
         }        
         &:nth-child(4) {
-            @include tablet-992 {
+            @include tablet-small-768 {
                 display: none;
             }
         }

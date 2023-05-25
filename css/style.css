@@ -334,7 +334,7 @@ body {
   font-size: 10rem;
   overflow-x: hidden; }
 
-.overflow-y-hidden {
+.overflow-hidden {
   overflow-y: hidden; }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -621,7 +621,7 @@ button {
     width: 16rem;
     height: 16rem; }
 
-.pop-up {
+.modal {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -632,9 +632,10 @@ button {
   transition: .3s all ease-in-out;
   -webkit-transform: scale(0);
           transform: scale(0);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   z-index: 9999; }
-  .pop-up__container {
+  .modal__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -646,16 +647,57 @@ button {
             justify-content: center;
     width: 100%;
     height: 100%; }
-  .pop-up__body {
-    background: url(../../img/unsplash.png) center no-repeat; }
-  .pop-up__close {
+  .modal__body {
+    background: url(../../img/unsplash.png) center no-repeat;
+    padding: 50rem 88rem 20rem 88rem;
+    max-width: 852rem;
+    position: relative; }
+    @media (max-width: 992px) {
+      .modal__body {
+        padding: 31rem 31rem 46rem 31rem;
+        max-width: 281rem; } }
+  .modal__title {
+    font-family: "Bebas Neue";
+    font-size: 18rem;
+    line-height: 18rem;
+    font-weight: 700;
+    color: #83418D;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    margin: 32rem 0 16rem 0; }
+    @media (max-width: 768px) {
+      .modal__title {
+        font-family: "Bebas Neue";
+        font-size: 14rem;
+        line-height: 17rem;
+        font-weight: 400;
+        color: #83418D;
+        margin: 16rem 0 8rem 0; } }
+  .modal__desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 16rem;
+    line-height: 24rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.1em; }
+    @media (max-width: 768px) {
+      .modal__desc {
+        font-family: "Poppins", sans-serif;
+        font-size: 10rem;
+        line-height: 15rem;
+        font-weight: 400;
+        color: #000; } }
+  .modal__close {
     font-size: 20rem;
     position: absolute;
     top: 20rem;
     right: 20rem;
     cursor: pointer; }
+    @media (max-width: 768px) {
+      .modal__close {
+        display: none; } }
 
-.pop-up.active {
+.modal.active {
   -webkit-transform: scale(100%);
           transform: scale(100%); }
 
@@ -1040,7 +1082,7 @@ button {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
         margin: auto; } }
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     .gallery__card:nth-child(4) {
       display: none; } }
   @media (max-width: 992px) {

@@ -62,40 +62,47 @@ var currentYear = new Date().getFullYear();
 document.getElementById("footer-year").innerHTML = currentYear;
 
 // modal window
-const popUp = document.getElementById('popUp');
-function popup(){
-      document.getElementById('headerUl').classList.remove("active");
-      document.getElementById("html").classList.add("overflow-hidden");
-      document.getElementById("body").classList.add("overflow-hidden");
-      // Remove the class "is-active" from the burger button
-      $(".header__burger").removeClass("is-active"); 
-      popUp.classList.add('active');
-      return false;
+
+
+// функция, которую мы вызывем в html по клику
+// н вешаем метод адлистенер. он будет отслеживать нажатие по клику
+// и выполнять функцию е.
+// е нужно, т.к сама кнока (ссылка), при нажтии куда-то ведет. ф-я, чтобы это убрать
+const modalWindow = document.getElementById('modal')
+
+function modal(){ 
+    modalWindow.classList.add('active');
+    document.getElementById("html").classList.add("overflow-hidden");
+    document.getElementById("body").classList.add("overflow-hidden");
+    //   return false;
 }
 
-
-// modal window to close by click on black bg
-popUp.addEventListener('click', function(){
-    popUp.classList.remove('active');
+// чтобы закрывалось окно при нажатии на черное
+modalWindow.addEventListener('click', function(){
+    modalWindow.classList.remove('active');
     document.getElementById("html").classList.remove("overflow-hidden");
     document.getElementById("body").classList.remove("overflow-hidden");
-    var titleElements = document.querySelectorAll('.field__title');
-    titleElements.forEach(function(titleElement) {
-    titleElement.classList.remove('active');
-  });    
 });
-const closePopUp = document.getElementById('closePopUp');
-closePopUp.addEventListener('click', () => {
-    popUp.classList.remove('active');
+const closeModal = document.getElementById('closeModal');
+closeModal.addEventListener('click', () => {
+    modalWindow.classList.remove('active');
     document.getElementById("html").classList.remove("overflow-hidden");
     document.getElementById("body").classList.remove("overflow-hidden");
-    var titleElements = document.querySelectorAll('.field__title');
-    titleElements.forEach(function(titleElement) {
-    titleElement.classList.remove('active');
-  });
-        
 });
 
-popUp.querySelector('.pop-up__body').addEventListener('click', function(event){  
-  event.stopPropagation();})
+modalWindow.querySelector('.modal__body').addEventListener('click', function(event){  
+  event.stopPropagation();
+})
+// делаем то же самое для кнопочки закрытия попапа. сначала нахродим ее,
+// отслеживаем нажатие и при нажатии убираем класс эктив
+
+modalWindow.querySelector('.modal__body').addEventListener('click', function(event){  
+  event.stopPropagation();
+})
+
+//  1. Здесь мы обратились к попапу и внутри него по классу нашли белое окно.
+//  2. отслеживаем клик по нему. в функции евент - это событие мыши. клик.
+//  3. сделали так чтобы это событие было только по белому окну, и информация о нем не передавалась родителю белого окна.
+//  т.е. чтоб при клике на белое, программа не воспринимала это как клик на черное. 
+//  есть такая странная осообенность js - передача события родителю
 
