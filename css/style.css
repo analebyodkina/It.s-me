@@ -954,10 +954,16 @@ button {
     text-align: center; }
     @media (max-width: 992px) {
       .beauty-section .beauty-section__title {
-        max-width: 286rem; } }
+        max-width: 286rem; }
+        .beauty-section .beauty-section__title span {
+          display: block;
+          text-align: end; } }
   .beauty-section__quote {
     max-width: 542rem;
     margin-bottom: 93rem; }
+    @media (max-width: 768px) {
+      .beauty-section__quote {
+        display: none; } }
   .beauty-section__text {
     font-family: "Poppins", sans-serif;
     font-size: 19rem;
@@ -978,29 +984,58 @@ button {
     grid-template: auto auto/repeat(2, 1fr);
     grid-auto-flow: dense;
     gap: 40rem; }
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       .beauty-section__row {
         grid-template-columns: 1fr;
         gap: 32rem;
         justify-items: center; } }
-  .beauty-section__card {
-    cursor: pointer;
-    overflow-y: hidden; }
-    .beauty-section__card:nth-child(4n - 1) {
-      -webkit-transform: translateY(-172rem);
-              transform: translateY(-172rem);
-      margin-bottom: -172px; }
-      @media (max-width: 992px) {
-        .beauty-section__card:nth-child(4n - 1) {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-          margin: auto; } }
+
+.gallery__card {
+  cursor: pointer;
+  overflow-y: hidden; }
+  .gallery__card:nth-child(4n - 1) {
+    -webkit-transform: translateY(-172rem);
+            transform: translateY(-172rem);
+    margin-bottom: -172px; }
     @media (max-width: 992px) {
-      .beauty-section__card:nth-child(4) {
-        display: none; } }
-    @media (max-width: 992px) {
-      .beauty-section__card img {
-        max-height: 281rem; } }
+      .gallery__card:nth-child(4n - 1) {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        margin: auto; } }
+  @media (max-width: 992px) {
+    .gallery__card:nth-child(4) {
+      display: none; } }
+  @media (max-width: 992px) {
+    .gallery__card img {
+      max-height: 281rem; } }
+.gallery__title {
+  display: none; }
+  @media (max-width: 992px) {
+    .gallery__title {
+      max-width: 540rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      gap: 20rem;
+      font-family: "Bebas Neue";
+      font-size: 14rem;
+      line-height: 17rem;
+      font-weight: 400;
+      color: #83418D;
+      margin-top: 16rem;
+      letter-spacing: 0.1em;
+      text-transform: capitalize; } }
+  .gallery__title img {
+    max-width: 130rem; }
+  .gallery__title p {
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
 
 .reflections-section {
   padding-bottom: 120rem; }
@@ -1018,7 +1053,6 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 315rem;
     -webkit-transition: 0.2s all ease-in-out;
     transition: 0.2s all ease-in-out; }
     .reflections-section__item:hover {

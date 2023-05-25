@@ -27,6 +27,11 @@
   justify-content: space-between;
   align-items: center;
 }
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @mixin desktop-small-1200 {
   @media (max-width: $desktop-small) {
