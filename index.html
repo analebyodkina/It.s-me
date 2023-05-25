@@ -9,7 +9,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet"  href="css/owl.carousel.css">
-	<link rel="stylesheet"  href="css/owl.theme.default.css">	
+	<link rel="stylesheet"  href="css/owl.theme.default.css">
+	
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="body">
@@ -347,12 +350,20 @@
 
 		<div class="modal" id="modal">
 			<div class="modal__container">
-				<div class="modal__body">					
-					<div class="modal__item">
-						<img class="modal__image" src="img/Larysa/Larysa1.webp" alt="Larysa photo 1" width="779" height="602">
+				<div class="modal__body">
+					<div class="main-gallery js-flickity">
+						<div class="gallery-cell modal__image">
+							<img src="img/Larysa/Larysa1.webp" alt="Larysa photo 1">
+						</div>
+						<div class="gallery-cell modal__image">
+							<img src="img/Larysa/Larysa2.webp" alt="Larysa photo 2">
+						</div>
+						<div class="gallery-cell modal__image">
+							<img src="img/Larysa/Larysa3.webp" alt="Larysa photo 3">
+						</div>						
+					  </div>
 						<div class="modal__title">Larysa, Ukraine</div>
-						<div class="modal__desc">They say that eyes are the mirror of the soul. I believe that my age is the mirror of mlife, experience, and wisdom: my joys, sorrows, happiness, pain, smiles... It's me!</div>
-						
+						<div class="modal__desc">They say that eyes are the mirror of the soul. I believe that my age is the mirror of mlife, experience, and wisdom: my joys, sorrows, happiness, pain, smiles... It's me!</div>						
 					</div>					
 					
 					<div class="modal__close" id="closeModal">
@@ -360,7 +371,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>	
 			
 	</div>
 		
@@ -370,6 +381,9 @@
 	integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
 	crossorigin="anonymous"></script>
 	<script src="js/owl.carousel.min.js"></script>
+
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 	<script src="js/script.js"></script>
 
 	

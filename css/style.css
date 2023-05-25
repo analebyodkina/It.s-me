@@ -651,6 +651,7 @@ button {
     background: url(../../img/unsplash.png) center no-repeat;
     padding: 50rem 88rem 20rem 88rem;
     max-width: 852rem;
+    width: 100%;
     position: relative; }
     @media (max-width: 992px) {
       .modal__body {
@@ -687,6 +688,8 @@ button {
         line-height: 15rem;
         font-weight: 400;
         color: #000; } }
+  .modal__image img {
+    height: 602rem; }
   .modal__close {
     font-size: 20rem;
     position: absolute;
@@ -700,6 +703,36 @@ button {
 .modal.active {
   -webkit-transform: scale(100%);
           transform: scale(100%); }
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  height: 100%;
+  width: 100%; }
+
+.flickity-page-dots {
+  display: none; }
+
+.flickity-prev-next-button {
+  background: transparent;
+  width: 40rem;
+  height: 31rem; }
+
+.flickity-prev-next-button .flickity-button-icon {
+  display: none; }
+
+.flickity-prev-next-button.previous::before {
+  content: url("../../img/icons/arrow-left-slider.svg");
+  display: block; }
+
+.flickity-prev-next-button.next::before {
+  content: url("../../img/icons/arrow-right-slider.svg"); }
+
+.flickity-button:disabled {
+  display: none; }
+
+.flickity-button:hover, .flickity-button:focus {
+  background: transparent;
+  -webkit-box-shadow: 0rem;
+          box-shadow: 0rem; }
 
 .header {
   padding: 25rem 0;

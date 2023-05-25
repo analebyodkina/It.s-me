@@ -1,0 +1,36 @@
+.flickity-enabled.is-draggable .flickity-viewport {
+    height: 100%;
+    width: 100%;    
+}
+.gallery-cell {
+    // padding: 0 100px;
+}
+.flickity-page-dots {
+    display: none;
+}
+.flickity-prev-next-button {
+    background: transparent;
+    width: 40rem;
+    height: 31rem;    
+}
+.flickity-prev-next-button .flickity-button-icon {
+    display: none;
+}
+.flickity-prev-next-button.previous {
+    &::before {
+        content: url('../../img/icons/arrow-left-slider.svg');
+        display: block;        
+    }
+}
+.flickity-prev-next-button.next {
+    &::before {
+        content: url('../../img/icons/arrow-right-slider.svg');        
+    }
+}
+.flickity-button:disabled {
+    display: none;
+}
+.flickity-button:hover, .flickity-button:focus {
+    background: transparent;
+    box-shadow: 0rem;
+}
