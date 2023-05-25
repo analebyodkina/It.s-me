@@ -8,16 +8,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-	
-	
-
-
-
 	<link rel="stylesheet"  href="css/owl.carousel.css">
 	<link rel="stylesheet"  href="css/owl.theme.default.css">	
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body">
 	<div class="wrapper">		
 		<header class="header">
 			<div class="container header__container">
@@ -195,7 +190,7 @@
 				<p class="beauty-section__caption">Audrey Hepburn</p>
 			  </blockquote>			  
 			  <div class="beauty-section__row gallery">													
-                    <div class="gallery__card _small">
+                    <div class="gallery__card _small" onclick="popup(this)">
                         <img src="img/Larysa/Larysa2.webp" alt="Larysa photo1" width="541" height="478">
 						<div class="gallery__title">
 							<p>Larysa, Ukraine</p>
@@ -304,7 +299,6 @@
 			</div>					
 		</section>	
 
-
 		<footer class="footer">
 			<div class="footer__container container">
 				<div class="footer__body">
@@ -350,6 +344,23 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="pop-up" id="popUp">
+			<div class="pop-up__container">
+				<div class="pop-up__body">					
+					<div class="pop-up__item">
+						<img class="pop-up__image" src="img/Larysa/Larysa1.webp" alt="Larysa photo 1" width="779" height="602">
+						<div class="pop-up__title">Larysa, Ukraine</div>
+						<div class="pop-up__desc">They say that eyes are the mirror of the soul. I believe that my age is the mirror of mlife, experience, and wisdom: my joys, sorrows, happiness, pain, smiles... It's me!</div>
+					</div>
+					
+					
+					<div class="pop-up__close" id="closePopUp">
+						<img src="img/icons/closecircle.svg" alt="close" width="42" height="42">					
+					</div>
+				</div>
+			</div>
+		</div>
 			
 	</div>
 		

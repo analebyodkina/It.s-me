@@ -621,6 +621,44 @@ button {
     width: 16rem;
     height: 16rem; }
 
+.pop-up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  overflow: hidden;
+  z-index: 9999; }
+  .pop-up__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%; }
+  .pop-up__body {
+    background: url(../../img/unsplash.png) center no-repeat; }
+  .pop-up__close {
+    font-size: 20rem;
+    position: absolute;
+    top: 20rem;
+    right: 20rem;
+    cursor: pointer; }
+
+.pop-up.active {
+  -webkit-transform: scale(100%);
+          transform: scale(100%); }
+
 .header {
   padding: 25rem 0;
   border-bottom: 1rem solid rgba(147, 138, 152, 0.6); }

@@ -4,9 +4,10 @@
 @import 'base';
 @import 'fonts';
 
-@import 'burger';
-@import 'accordion';
-@import 'owl-slider';
+@import 'utils/burger';
+@import 'utils/accordion';
+@import 'utils/owl-slider';
+@import 'utils/modal';
 
 @import 'blocks/header';
 @import 'blocks/main-section';
