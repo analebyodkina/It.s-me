@@ -37,6 +37,7 @@ $('.owl-carousel').owlCarousel({
     lazyLoad:true,
     loop:true,
     margin:24,
+    autoHeight: true,
     nav: true,      
     responsive : {
       // breakpoint from 0 up
@@ -159,3 +160,15 @@ modalWindow3.querySelector('.modal__body').addEventListener('click', function(ev
 })
 
 
+// const test = () => {
+//     if(number === 1 ) {
+
+//     } 
+//     if(number === 2 ) {
+
+//     } 
+//     if(number === 1 ) {
+
+//     } 
+
+// }

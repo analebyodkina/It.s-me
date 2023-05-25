@@ -7,7 +7,8 @@
         display: flex;
         flex-direction: column;
         gap: 16rem;
-        opacity: 0;        
+        opacity: 0;
+              
         li a{
             @include text($ff, 16rem, 24rem, 400, $burger-links);            
             letter-spacing: 0.1em;
@@ -40,7 +41,7 @@
     }
     .header__ul.active {
         opacity: 1;
-        z-index: 99;
+        z-index: 999;
     }
    
    

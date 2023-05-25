@@ -467,7 +467,7 @@ button {
 
 .header__ul.active {
   opacity: 1;
-  z-index: 99; }
+  z-index: 999; }
 
 .accordion {
   display: none; }
@@ -547,13 +547,17 @@ button {
 .accordion-open .accordion__item {
   border: 1.5rem solid transparent; }
 
-.owl-carousel .owl-stage-outer {
-  border-radius: 0;
-  position: relative;
-  margin: 0 62px 0 62px; }
-  @media (max-width: 992px) {
-    .owl-carousel .owl-stage-outer {
-      margin: 0; } }
+.owl-carousel {
+  padding: 0 80px; }
+  .owl-carousel .owl-stage-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 0;
+    position: relative; }
+    @media (max-width: 992px) {
+      .owl-carousel .owl-stage-outer {
+        margin: 0; } }
 
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
   width: 36rem;
@@ -583,6 +587,7 @@ button {
   position: absolute;
   width: 100%;
   height: 0px;
+  left: 0;
   top: 40%;
   z-index: 999;
   display: -webkit-box;
@@ -621,6 +626,20 @@ button {
     width: 16rem;
     height: 16rem; }
 
+.owl-carousel .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  height: 100%; }
+
 .modal {
   width: 100%;
   height: 100%;
@@ -630,15 +649,14 @@ button {
   background: rgba(0, 0, 0, 0.8);
   -webkit-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   overflow-x: hidden;
-  overflow-y: scroll;
-  z-index: 9999; }
+  overflow-y: auto;
+  z-index: -2; }
   .modal__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    -webkit-transform: scale(0);
+            transform: scale(0);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -705,8 +723,10 @@ button {
         display: none; } }
 
 .modal.active {
-  -webkit-transform: scale(100%);
-          transform: scale(100%); }
+  z-index: 9999; }
+  .modal.active .modal__container {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
 
 .flickity-enabled.is-draggable .flickity-viewport {
   max-height: auto;

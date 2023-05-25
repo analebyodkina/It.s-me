@@ -1,7 +1,6 @@
 .header {
     padding: 25rem 0;
-    border-bottom: 1rem solid $border;
-    
+    border-bottom: 1rem solid $border;    
     @include mobile-576 {
         padding-top: 34rem; 
         padding-bottom: 22rem;
