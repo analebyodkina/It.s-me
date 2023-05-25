@@ -11,7 +11,7 @@
     &__item {
         border: 1.5rem solid $color-grey;
         border-radius: 5rem;
-        padding: 21rem 16rem 0 16rem;
+        padding: 15rem 16rem 0 16rem;
         position: relative;        
     }
     &__header {
@@ -31,7 +31,7 @@
         height: 0;
         transition: all .25s ease;
         max-width: 238rem;
-        padding-top: 16rem;
+        margin-top: 16rem;
     }
     &__description {
         @include text($ff, 12rem, 19rem, 400, $color-text);

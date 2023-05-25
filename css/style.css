@@ -337,7 +337,7 @@ body {
 .overflow-hidden {
   overflow-y: hidden; }
 
-h1, h2, h3, h4, h5, h6, p, ul, li {
+h1, h2, h3, h4, h5, h6, p, ul, li, blockquote {
   margin: 0;
   padding: 0; }
 
@@ -480,7 +480,7 @@ button {
   .accordion__item {
     border: 1.5rem solid #2D2B2E;
     border-radius: 5rem;
-    padding: 21rem 16rem 0 16rem;
+    padding: 15rem 16rem 0 16rem;
     position: relative; }
   .accordion__header {
     display: -webkit-box;
@@ -509,7 +509,7 @@ button {
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
     max-width: 238rem;
-    padding-top: 16rem; }
+    margin-top: 16rem; }
   .accordion__description {
     font-family: "Poppins", sans-serif;
     font-size: 12rem;
@@ -548,16 +548,16 @@ button {
   border: 1.5rem solid transparent; }
 
 .owl-carousel {
-  padding: 0 80px; }
+  padding: 0 70rem; }
+  @media (max-width: 992px) {
+    .owl-carousel {
+      padding: 0; } }
   .owl-carousel .owl-stage-outer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border-radius: 0;
     position: relative; }
-    @media (max-width: 992px) {
-      .owl-carousel .owl-stage-outer {
-        margin: 0; } }
 
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
   width: 36rem;
@@ -588,7 +588,7 @@ button {
   width: 100%;
   height: 0px;
   left: 0;
-  top: 40%;
+  top: 45%;
   z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1103,7 +1103,7 @@ button {
           display: block;
           text-align: end; } }
   .beauty-section__quote {
-    max-width: 542rem;
+    max-width: 540rem;
     margin-bottom: 93rem; }
     @media (max-width: 768px) {
       .beauty-section__quote {

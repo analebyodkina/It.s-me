@@ -42,19 +42,15 @@ $('.owl-carousel').owlCarousel({
     responsive : {
       // breakpoint from 0 up
       0 : {
-          items:1.3,
-          
+          items:1.3,          
       },      
       576 : {
-          items:2, 
-                
+          items:2,                 
       },
       // breakpoint from 992 up      
-      992 : {
-        items:3,
-        
+      768 : {
+        items:3,        
       }
-
     }
 });
 
@@ -114,7 +110,7 @@ modalWindow2.addEventListener('click', function(){
     document.getElementById("html").classList.remove("overflow-hidden");
     document.getElementById("body").classList.remove("overflow-hidden");
 });
-const closeModal2 = document.getElementById('closeModal');
+const closeModal2 = document.getElementById('closeModal2');
 closeModal2.addEventListener('click', () => {
     modalWindow2.classList.remove('active');
     document.getElementById("html").classList.remove("overflow-hidden");
@@ -144,7 +140,7 @@ function modal3(){
     document.getElementById("html").classList.remove("overflow-hidden");
     document.getElementById("body").classList.remove("overflow-hidden");
 });
-const closeModal3 = document.getElementById('closeModal');
+const closeModal3 = document.getElementById('closeModal3');
     closeModal3.addEventListener('click', () => {
     modalWindow3.classList.remove('active');
     document.getElementById("html").classList.remove("overflow-hidden");
