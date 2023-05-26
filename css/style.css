@@ -666,12 +666,14 @@ button {
     width: 100%;
     height: 100%; }
   .modal__body {
-    -ms-flex-item-align: center;
-        align-self: center;
-    background: url(../../img/unsplash.png) center no-repeat;
+    background: url(../../img/unsplash.webp) center no-repeat;
     padding: 50rem 88rem 20rem 88rem;
     max-width: 852rem;
-    position: relative; }
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
     @media (max-width: 992px) {
       .modal__body {
         padding: 31rem 31rem 46rem 31rem;
@@ -708,7 +710,9 @@ button {
         font-weight: 400;
         color: #000; } }
   .modal__image img {
-    height: 602rem; }
+    height: 602rem;
+    max-width: 676rem;
+    width: 100%; }
     @media (max-width: 992px) {
       .modal__image img {
         height: auto; } }
@@ -1284,11 +1288,14 @@ button {
       padding-left: 31rem; } }
   .contacts__image {
     position: absolute;
-    left: 0;
-    max-height: 337rem; }
-    @media (max-width: 992px) {
-      .contacts__image svg {
-        height: 291rem; } }
+    left: 0; }
+    .contacts__image img {
+      max-height: 337rem;
+      -o-object-fit: fill;
+         object-fit: fill; }
+      @media (max-width: 992px) {
+        .contacts__image img {
+          max-height: 291rem; } }
   .contacts__item {
     max-width: 297rem; }
   .contacts__title {

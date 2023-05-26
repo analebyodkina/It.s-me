@@ -11,19 +11,21 @@
 	z-index: -2;    
     &__container {
         transition: .3s all ease-in-out;  
-        transform: scale(0);
-        // display: flex;
+        transform: scale(0);        
 		align-items: center;
 		justify-content: center;
         width: 100%;
         height: 100%;        
     }
-    &__body { 
-        align-self: center;
-        background: url(../../img/unsplash.png) center no-repeat;
+    &__body {
+                
+        background: url(../../img/unsplash.webp) center no-repeat;
         padding: 50rem 88rem 20rem 88rem;              
         max-width: 852rem;         
-        position: relative;        
+        position: relative; 
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);       
         @include tablet-992 {
             padding: 31rem 31rem 46rem 31rem;
             max-width: 281rem;
@@ -47,7 +49,9 @@
         }
     } 
     &__image img {
-        height: 602rem;
+        height: 602rem; 
+        max-width: 676rem;
+        width: 100%;      
         @include tablet-992 {
             height: auto;
         }

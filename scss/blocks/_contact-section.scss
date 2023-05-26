@@ -39,18 +39,18 @@
     @include tablet-992 {
         align-self: flex-start;
         padding-left: 31rem;
-    }    
-    
+    }
     position: relative;
     &__image {
         position: absolute;
-        left: 0;        
-        max-height: 337rem;
-        @include tablet-992 {
-            svg {
-                height: 291rem;
+        left: 0;
+        img {
+            max-height: 337rem;
+            object-fit: fill;
+            @include tablet-992 {
+                max-height: 291rem;
             }
-        }        
+        }  
     }
     &__item {
         max-width: 297rem;        
