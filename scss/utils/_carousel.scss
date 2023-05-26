@@ -1,13 +1,23 @@
 .flickity-enabled.is-draggable .flickity-viewport {
     max-height: auto;
-    width: 100%;    
+    width: 100%; 
+    @include tablet-992 {
+        height: auto;
+        max-height: 158rem;
+        width: 100%;       
+        
+    }   
 }
-// .gallery-cell {
-//     height: 602rem;
-//     width: 100%;
+.gallery-cell {
+    height: 602rem;    
+    @include tablet-992 {
+        height: auto;
+        max-height: 158rem;
+        width: 100%;
+    }
     
     
-// }
+}
 .flickity-page-dots {
     display: none;
 }

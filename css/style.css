@@ -413,7 +413,8 @@ button {
   font-family: 'Bebas Neue';
   src: url("../fonts/BebasNeueBold.woff2") format("woff2");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 .header__ul {
   position: absolute;
   left: 0;
@@ -673,8 +674,8 @@ button {
     position: relative;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    -webkit-transform: translate(-50%, -50%) scale(0.93);
+            transform: translate(-50%, -50%) scale(0.93); }
     @media (max-width: 992px) {
       .modal__body {
         padding: 31rem 31rem 46rem 31rem;
@@ -716,11 +717,12 @@ button {
     width: 100%; }
     @media (max-width: 992px) {
       .modal__image img {
-        height: auto; } }
+        height: auto;
+        max-height: 158rem; } }
   .modal__close {
     font-size: 20rem;
     position: absolute;
-    top: 20rem;
+    top: 25rem;
     right: 20rem;
     cursor: pointer; }
     @media (max-width: 992px) {
@@ -736,6 +738,19 @@ button {
 .flickity-enabled.is-draggable .flickity-viewport {
   max-height: auto;
   width: 100%; }
+  @media (max-width: 992px) {
+    .flickity-enabled.is-draggable .flickity-viewport {
+      height: auto;
+      max-height: 158rem;
+      width: 100%; } }
+
+.gallery-cell {
+  height: 602rem; }
+  @media (max-width: 992px) {
+    .gallery-cell {
+      height: auto;
+      max-height: 158rem;
+      width: 100%; } }
 
 .flickity-page-dots {
   display: none; }
