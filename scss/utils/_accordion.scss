@@ -29,8 +29,7 @@
     &__content {
         overflow: hidden;
         height: 0;
-        transition: all .25s ease;
-        max-width: 238rem;
+        transition: all .25s ease;        
         margin-top: 16rem;
     }
     &__description {
@@ -44,7 +43,10 @@
         gap: 8rem;
         li{
             @include text($ff, 10rem, 16rem, 400, $color-text);        
-            letter-spacing: 0.1em; 
+            letter-spacing: 0.1em;
+            &:nth-child(even) {
+                color: $color-icons;
+            }
         }
         @include text($ff, 10rem, 16rem, 400, $color-text);        
         letter-spacing: 0.1em;

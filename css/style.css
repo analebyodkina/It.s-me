@@ -508,7 +508,6 @@ button {
     height: 0;
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
-    max-width: 238rem;
     margin-top: 16rem; }
   .accordion__description {
     font-family: "Poppins", sans-serif;
@@ -540,6 +539,8 @@ button {
       font-weight: 400;
       color: #B1A6B7;
       letter-spacing: 0.1em; }
+      .accordion__list li:nth-child(even) {
+        color: #502D5D; }
 
 .accordion-open .accordion__icon {
   -webkit-transform: rotate(45deg);
