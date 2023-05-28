@@ -46,7 +46,7 @@
         left: 0;
         img {
             max-height: 337rem;
-            object-fit: fill;
+            object-fit: contain;
             @include tablet-992 {
                 max-height: 291rem;
             }
@@ -56,8 +56,7 @@
         max-width: 297rem;        
     }
     &__title {
-        @include text($ff-titles, 18rem, 18rem, 700, $color-primary);        
-        letter-spacing: 0.1em;
+        @include text($ff-titles, 18rem, 18rem, 700, $color-primary); 
         margin-bottom: 16rem;
     }
     &__desc {        

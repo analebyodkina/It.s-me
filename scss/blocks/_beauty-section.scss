@@ -24,12 +24,12 @@
     }
     &__text {
         @include text($ff, 19rem, 30rem, 400, $color-text);
-        letter-spacing: 0.1em;
+        
     }
     &__caption {
         @include text($ff, 19rem, 28rem, 400, $color-text);
         text-align: end;        
-        letter-spacing: 0.1em;
+        
     }
     &__row {        
         display: grid;
@@ -46,13 +46,16 @@
 .gallery {
     &__card {
         cursor: pointer;
-        overflow-y: hidden;
-        // &._small {
-        //     max-height: 478rem;
-        // } 
-        // &._big {
-        //     max-height: 650rem;
-        // } 
+        overflow-y: hidden;        
+        &._small {
+            max-height: 478rem;
+        } 
+        &._big {
+            max-height: 650rem;
+        } 
+        img {
+            height: 100%;
+        }
         // select 3,7,11 etc
         &:nth-child(4n - 1) {
             transform: translateY(-172rem);
@@ -67,10 +70,9 @@
                 display: none;
             }
         }
-        @include tablet-992 {
+        @include tablet-small-768 {
             img {
-                max-height: 281rem;
-                // object-fit: contain;                
+                max-height: 281rem;                              
             }
         }
     }

@@ -59,8 +59,7 @@
         }
     }
     &__title {
-        @include text($ff-titles, 24rem, 24rem, 700, $color-icons);
-        letter-spacing: 0.1em;
+        @include text($ff-titles, 24rem, 24rem, 700, $color-icons);        
         text-transform: lowercase;
         flex-shrink: 0;
         @include mobile-576 {
@@ -68,8 +67,7 @@
         }        
     }
     &__image {
-        max-width: 274rem;       
-        
+        max-width: 274rem;
     }
     &__copyright {
         display: flex;
@@ -85,10 +83,8 @@
             @include mobile-576 {
                 max-width: 71rem;
             }
-
         }
     }
-
     &__design {
         margin: 0 8rem 0 22rem;
         @include tablet-992 {

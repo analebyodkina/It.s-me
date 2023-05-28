@@ -22,6 +22,7 @@ body {
     color: $color-text;
     background: $main-bg;
     font-size: 10rem;
+    letter-spacing: 0.1em;
     overflow-x: hidden;
 }
 .overflow-hidden {
@@ -35,7 +36,7 @@ a {
     text-decoration: none;
     display: inline-block;
 }
-img {
+img, source {
     max-width: 100%;    
     object-fit: cover;
     height: auto;
@@ -47,8 +48,7 @@ button {
     padding: 0;    
   }
 .title {
-    @include text($ff-titles, 48rem, 48rem, 700, $color-primary);
-    letter-spacing: 0.1em;
+    @include text($ff-titles, 48rem, 48rem, 700, $color-primary);    
     text-transform: capitalize;
     margin-bottom: 80rem;
     @include tablet-992 {
@@ -58,15 +58,13 @@ button {
 }
 .subtitle {
     @include text($ff-titles, 36rem, 36rem, 700, $color-primary);
-    text-transform: capitalize;
-    letter-spacing: 0.1em;
+    text-transform: capitalize;    
     @include tablet-992 {
         @include text($ff-titles, 20rem, 20rem, 700, $color-icons);
     }
 }
 .desc {
-    @include text($ff, 16rem, 26rem, 400, $color-text);
-    letter-spacing: 0.1em;
+    @include text($ff, 16rem, 26rem, 400, $color-text);    
 }
 .mob {
     display: none;    

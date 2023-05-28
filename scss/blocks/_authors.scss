@@ -28,8 +28,7 @@
     }
 
     &__name {        
-        @include text($ff, 20rem, 30rem, 500, $color-primary);
-        letter-spacing: 0.1em;
+        @include text($ff, 20rem, 30rem, 500, $color-primary);        
         transition: $transition;
         &:after {
 			content: "";
@@ -52,8 +51,7 @@
     }
 
     &__desc {
-        @include text($ff, 18rem, 27rem, 500, $color-text);
-        letter-spacing: 0.1em;
+        @include text($ff, 18rem, 27rem, 500, $color-text);        
         @include tablet-992 {
             @include text($ff, 14rem, 21rem, 500, $color-text);
         }

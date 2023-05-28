@@ -8,8 +8,7 @@
         background: $card-bg;
         border: 1px solid $card-border;
         display: flex;        
-        flex-direction: column; 
-        // max-width: 315rem;
+        flex-direction: column;        
         transition: $transition; 
         &:hover {
             box-shadow: 0 0 4px #653570;            
@@ -19,8 +18,7 @@
         margin-bottom: 24rem;       
     }
     &__slogan {
-        @include text($ff-titles, 16rem, 16rem, 700, $color-primary);
-        letter-spacing: 0.1em;
+        @include text($ff-titles, 16rem, 16rem, 700, $color-primary);        
         text-transform: capitalize;
         margin-bottom: 16rem;
     }
@@ -29,7 +27,6 @@
     }
     
     &__link {
-        @include text($ff, 16rem, 26rem, 400, $color-grey-light);
-        letter-spacing: 0.1em;
+        @include text($ff, 16rem, 26rem, 400, $color-grey-light);        
     }
 }

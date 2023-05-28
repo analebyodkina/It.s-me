@@ -1,7 +1,6 @@
 .main-section {
     position: relative;
-    height: 100%;
-    // overflow-x: hidden;
+    height: 100%;    
     &__container {        
         display: flex;
         flex-direction: column;
@@ -26,8 +25,7 @@
         }
     }
     &__desc {
-        @include text($ff, 18rem, 29rem, 400, $color-text);
-        letter-spacing: 0.1em;
+        @include text($ff, 18rem, 29rem, 400, $color-text);        
         margin-bottom: 48rem;
         max-width: 540rem;
         @include mobile-576 {
@@ -42,7 +40,12 @@
 		right: 0;
 		top: 0;	
         z-index: -1;
-        max-width: 850rem;	
+        max-width: 850rem;
+        @include tablet-small-768{
+            img {            
+                filter: brightness(90%)	
+            }
+        }	
     }
     &__btn {
         width: 378rem;
@@ -76,4 +79,3 @@
 .btn-hover {
     display: none;    
 }
-
