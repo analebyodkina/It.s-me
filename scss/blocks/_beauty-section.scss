@@ -1,5 +1,5 @@
 .beauty-section {
-    padding: 128rem 15rem 121rem 15rem;
+    padding: 120rem 15rem;
     padding-bottom: 121rem;
     @include tablet-992 {
         padding: 56rem 32rem;         
@@ -46,15 +46,19 @@
 .gallery {
     &__card {
         cursor: pointer;
-        overflow-y: hidden;        
+        overflow-y: hidden;               
         &._small {
             max-height: 478rem;
         } 
         &._big {
-            max-height: 650rem;
+            height: 650rem;
+            @include tablet-992 {            
+                height: auto; 
+            }
         } 
         img {
             height: 100%;
+            display: block;
         }
         // select 3,7,11 etc
         &:nth-child(4n - 1) {
@@ -70,7 +74,7 @@
                 display: none;
             }
         }
-        @include tablet-small-768 {
+        @include tablet-992 {
             img {
                 max-height: 281rem;                              
             }

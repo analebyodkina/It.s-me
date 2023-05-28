@@ -73,6 +73,7 @@ button {
     }
 }
 .main {
+    display: block;
     @include tablet-992 {
         display: none;
     }

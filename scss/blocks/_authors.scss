@@ -1,13 +1,16 @@
-.authors {    
-    width: 100%;
-    @include flex-between;
-    gap: 56rem;
-    padding-bottom: 112rem;
-    @include tablet-992 {
-        gap: 32rem;
-        align-items: flex-start; 
-        padding-bottom: 56rem; 
-    }    
+.authors {
+    background: $bg-add;    
+    &__container {
+        width: 100%;
+        @include flex-between;
+        gap: 56rem;
+        padding-bottom: 120rem;
+        @include tablet-992 {
+            gap: 32rem;
+            align-items: flex-start; 
+            padding-bottom: 56rem; 
+        }  
+    }
     &__image {        
         @include tablet-992 {
             display: none;
