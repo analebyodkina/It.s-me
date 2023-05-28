@@ -78,3 +78,15 @@ button {
         display: none;
     }
 }
+*::-webkit-scrollbar {
+    width: 15rem;
+    height: 10rem;
+    background-color: $main-bg;
+    
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 16rem;
+    height: 10rem;
+    width: 10rem;
+    background-color: $color-primary;   
+}
