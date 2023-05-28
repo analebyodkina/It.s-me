@@ -23,13 +23,11 @@
         }
     }
     &__text {
-        @include text($ff, 19rem, 30rem, 400, $color-text);
-        
+        @include text($ff, 19rem, 30rem, 400, $color-text);        
     }
     &__caption {
         @include text($ff, 19rem, 28rem, 400, $color-text);
-        text-align: end;        
-        
+        text-align: end; 
     }
     &__row {        
         display: grid;
@@ -46,7 +44,7 @@
 .gallery {
     &__card {
         cursor: pointer;
-        overflow-y: hidden;               
+        // overflow-y: hidden;               
         &._small {
             max-height: 478rem;
         } 
@@ -76,12 +74,12 @@
         }
         @include tablet-992 {
             img {
-                max-height: 281rem;                              
+                max-height: 281rem; 
+                height: auto;                             
             }
         }
     }
-	&__title {
-        display: none;
+	&__title {        
         @include tablet-992 {
             max-width: 540rem;
             @include flex-between;
@@ -90,6 +88,7 @@
             margin-top: 16rem; 
             letter-spacing: 0.1em;
             text-transform: capitalize;
+            margin-bottom: 10rem;
         }
         img {
             max-width: 130rem;
