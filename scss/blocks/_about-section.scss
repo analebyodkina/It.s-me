@@ -1,16 +1,19 @@
 .about-section {    
-    padding-top: 120rem;
-    padding-bottom: 56rem;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(400rem, 540rem));
-    gap: 40rem;
-    flex-wrap: wrap;
+    padding: 120rem 0;    
+    background: $bg-add;
     @include tablet-992{
-        padding-top: 56rem;
-        padding-bottom: 32rem;
-        grid-template-columns: 1fr;
-        gap: 0;
-        margin-inline: auto;
+        padding: 56rem 0;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(400rem, 540rem));
+        gap: 40rem;
+        flex-wrap: wrap;
+        @include tablet-992{        
+            grid-template-columns: 1fr;
+            gap: 0;
+            margin-inline: auto;
+        }
     }    
     &__title {        
         @include tablet-992 {

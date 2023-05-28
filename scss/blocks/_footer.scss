@@ -1,6 +1,7 @@
 .footer {
     padding: 59rem 0 40rem 0;
     border-top: 1rem solid $border;
+    background: $bg-add;
     @include tablet-992 {
         padding: 31rem 0; 
     }    

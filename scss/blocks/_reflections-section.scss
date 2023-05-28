@@ -1,5 +1,6 @@
 .reflections-section {
     padding-bottom: 120rem;
+    background: $bg-add;
     @include tablet-992 {
         padding-bottom: 56rem;
     }
@@ -28,5 +29,5 @@
     
     &__link {
         @include text($ff, 16rem, 26rem, 400, $color-grey-light);        
-    }
+    }    
 }
