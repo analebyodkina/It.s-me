@@ -51,6 +51,7 @@ button {
     @include text($ff-titles, 48rem, 48rem, 700, $color-primary);    
     text-transform: capitalize;
     margin-bottom: 80rem;
+    letter-spacing: 0.1em;
     @include tablet-992 {
         @include text($ff-titles, 32rem, 32rem, 700, $color-primary);
         margin-bottom: 40rem;
@@ -58,7 +59,8 @@ button {
 }
 .subtitle {
     @include text($ff-titles, 36rem, 36rem, 700, $color-primary);
-    text-transform: capitalize;    
+    text-transform: capitalize;
+    letter-spacing: 0.1em;    
     @include tablet-992 {
         @include text($ff-titles, 20rem, 20rem, 700, $color-icons);
     }

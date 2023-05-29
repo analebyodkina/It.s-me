@@ -58,6 +58,7 @@
     &__title {
         @include text($ff-titles, 18rem, 18rem, 700, $color-primary); 
         margin-bottom: 16rem;
+        letter-spacing: 0.1em;
     }
     &__desc {        
         @include tablet-992 {

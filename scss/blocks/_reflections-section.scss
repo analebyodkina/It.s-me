@@ -19,7 +19,8 @@
         margin-bottom: 24rem;       
     }
     &__slogan {
-        @include text($ff-titles, 16rem, 16rem, 700, $color-primary);        
+        @include text($ff-titles, 16rem, 16rem, 700, $color-primary);    
+        letter-spacing: 0.1em;    
         text-transform: capitalize;
         margin-bottom: 16rem;
     }
