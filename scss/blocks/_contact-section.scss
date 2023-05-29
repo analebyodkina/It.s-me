@@ -34,7 +34,7 @@
     align-self: flex-end;     
     display: flex;
     flex-direction: column;
-    gap: 24rem;           
+    gap: 21rem;           
     padding: 0 0 60rem 56rem;
     @include tablet-992 {
         align-self: flex-start;
@@ -46,7 +46,8 @@
         left: 0;
         img {
             max-height: 337rem;
-            object-fit: contain;
+            position: relative;
+            top: 1rem;
             @include tablet-992 {
                 max-height: 291rem;
             }
@@ -57,7 +58,7 @@
     }
     &__title {
         @include text($ff-titles, 18rem, 18rem, 700, $color-primary); 
-        margin-bottom: 16rem;
+        margin-bottom: 13rem;
         letter-spacing: 0.1em;
     }
     &__desc {        

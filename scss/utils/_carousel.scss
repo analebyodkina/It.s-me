@@ -4,8 +4,7 @@
     @include tablet-992 {
         height: auto;
         max-height: 158rem;
-        width: 100%;       
-        
+        width: 100%;
     }   
 }
 .gallery-cell {
@@ -15,8 +14,6 @@
         max-height: 158rem;
         width: 100%;
     }
-    
-    
 }
 .flickity-page-dots {
     display: none;
@@ -32,17 +29,21 @@
 .flickity-prev-next-button .flickity-button-icon {
     display: none;
 }
-.flickity-prev-next-button.previous {
+.flickity-prev-next-button.previous {         
     left: -70px;
     &::before {
-        content: url('../../img/icons/arrow-left-slider.svg');
-        display: block;        
+        content: url("../img/icons/arrow-left-slider.svg");
+        display: block;
+        position: relative;
+        z-index: 100;        
     }
 }
-.flickity-prev-next-button.next {
+.flickity-prev-next-button.next {         
     right: -70px;
     &::before {
-        content: url('../../img/icons/arrow-right-slider.svg');        
+        content: url("../img/icons/arrow-right-slider.svg"); 
+        position: relative;
+        z-index: 110;          
     }
 }
 .flickity-button:disabled {

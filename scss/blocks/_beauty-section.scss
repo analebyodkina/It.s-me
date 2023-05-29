@@ -43,8 +43,10 @@
 }
 .gallery {
     &__card {
-        cursor: pointer;
-        // overflow-y: hidden;               
+        &:not(:last-child) {
+            cursor: pointer;
+        }
+                      
         &._small {
             max-height: 478rem;
         } 

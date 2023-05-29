@@ -5,6 +5,7 @@
         padding: 56rem 0;
     }
     &__item {
+        margin: 3rem;
         padding: 32rem;
         background: $card-bg;
         border: 1px solid $card-border;
@@ -12,7 +13,7 @@
         flex-direction: column;        
         transition: $transition; 
         &:hover {
-            box-shadow: 0 0 4px #653570;            
+            box-shadow: 0rem 0rem 4rem #653570;           
         }          
     }
     &__image {
