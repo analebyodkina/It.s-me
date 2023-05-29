@@ -5,7 +5,7 @@
     flex-direction: column;
     @include tablet-992 {
         align-items: flex-start;
-        padding-bottom: 236rem;
+        padding: 56rem 32rem 236rem 32rem;
     }     
     &__desc {
         margin-bottom: 40rem;
