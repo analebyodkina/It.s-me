@@ -26,7 +26,7 @@
     }
     &__desc {
         @include text($ff, 18rem, 29rem, 400, $color-text);        
-        margin-bottom: 48rem;
+        margin-bottom: 32rem;
         max-width: 540rem;
         @include mobile-576 {
             max-width: 280rem;
@@ -52,7 +52,8 @@
         height: 197rem;      
         transition: $transition;
         display: flex;
-        align-items: center;              
+        align-items: center; 
+        margin-left: 93rem;
         &:hover {            
             svg {
                 display: none;
@@ -64,7 +65,7 @@
         @include tablet-992 {
             width: 295rem;
             height: 195rem;
-            // align-items: initial; 
+            margin-left: 0;            
             svg {
                 max-width: 271rem;
                 position: relative;                
