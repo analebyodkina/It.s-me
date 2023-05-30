@@ -42,11 +42,8 @@
     }
 }
 .gallery {
-    &__card {
-        &:not(:last-child) {
-            cursor: pointer;
-        }
-                      
+    &__card {        
+        cursor: pointer;
         &._small {
             max-height: 478rem;
         } 
