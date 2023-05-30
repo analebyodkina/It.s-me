@@ -72,15 +72,23 @@
     }
     &__copyright {
         display: flex;
-        align-items: center;
+        // align-items: center;       
         align-self: flex-end;
         @include text($ff-titles, 16rem, 19rem, 400, $copyright);
         text-transform: uppercase;
         @include tablet-992 {
             align-self: initial;
         }
+        a {
+            max-height: 15rem;
+            align-self: flex-start; 
+            position: relative;
+            bottom: 1rem;
+        }        
         img {
-            height: auto; 
+            max-height: 15rem;
+            object-fit: contain;
+            align-self: flex-start;  
             @include mobile-576 {
                 max-width: 71rem;
             }
@@ -90,7 +98,7 @@
         margin: 0 8rem 0 22rem;
         @include tablet-992 {
             margin-left: auto;
-            @include text($ff-titles, 10rem, 12rem, 400, $copyright);
+            @include text($ff-titles, 12rem, 10rem, 400, $copyright);
         }
     }
 }
