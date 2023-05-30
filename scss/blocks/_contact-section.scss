@@ -1,6 +1,6 @@
 .contact-section {    
     position: relative;
-    padding: 120rem 15rem;
+    padding: 120rem 15rem 150rem 15rem;
     display: flex;
     flex-direction: column;
     @include tablet-992 {
@@ -34,7 +34,7 @@
     align-self: flex-end;     
     display: flex;
     flex-direction: column;
-    gap: 21rem;           
+    gap: 24rem;           
     padding: 0 0 60rem 56rem;
     @include tablet-992 {
         align-self: flex-start;
@@ -44,8 +44,9 @@
     &__image {
         position: absolute;
         left: 0;
+        height: 337rem;
         img {
-            max-height: 337rem;
+            height: 100%;
             position: relative;
             top: 1rem;
             @include tablet-992 {
@@ -58,7 +59,7 @@
     }
     &__title {
         @include text($ff-titles, 18rem, 18rem, 700, $color-primary); 
-        margin-bottom: 13rem;
+        margin-bottom: 16rem;
         letter-spacing: 0.1em;
     }
     &__desc {        

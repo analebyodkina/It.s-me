@@ -98,7 +98,9 @@
         margin: 0 8rem 0 22rem;
         @include tablet-992 {
             margin-left: auto;
-            @include text($ff-titles, 12rem, 10rem, 400, $copyright);
+            @include text($ff-titles, 10rem, 12rem, 400, $copyright);
+            position: relative;
+            top: 3rem;
         }
     }
 }
