@@ -6,7 +6,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        padding: 221rem 15rem 36rem 15rem;
+        padding: 60rem 15rem 36rem 15rem;
         @include mobile-576 {
             padding: 401rem 32rem 0 32rem;                              
         }
@@ -40,8 +40,18 @@
 		right: 0;
 		top: 0;	
         z-index: -1;
-        max-width: 850rem;
-        @include tablet-small-768{
+        max-width: 700rem;
+        max-height: 757rem;
+        img {
+            height: 100%;
+        }        
+        @include desktop-small-1200{
+            img {            
+                filter: brightness(60%)	
+            }
+        }
+        @include tablet-992{            
+            max-height: auto;
             img {            
                 filter: brightness(90%)	
             }
