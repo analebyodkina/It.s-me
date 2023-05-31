@@ -60,21 +60,20 @@
         }
     }
     &__title {
-        @include text($ff-titles, 24rem, 24rem, 700, $color-icons);        
+        @include text($ff-titles, 24rem, 24rem, 700, $color-primary);        
         letter-spacing: 0.1em;
         flex-shrink: 0;
         @include mobile-576 {
-            @include text($ff-titles, 16rem, 16rem, 700, $color-icons);
+            @include text($ff-titles, 16rem, 16rem, 700, $color-primary);
         }        
     }
     &__image {
         max-width: 274rem;
     }
     &__copyright {
-        display: flex;
-        // align-items: center;       
+        display: flex;              
         align-self: flex-end;
-        @include text($ff-titles, 16rem, 19rem, 400, $copyright);
+        @include text($ff-titles, 16rem, 19rem, 400, $color-primary);
         text-transform: uppercase;
         @include tablet-992 {
             align-self: initial;
@@ -98,7 +97,7 @@
         margin: 0 8rem 0 22rem;
         @include tablet-992 {
             margin-left: auto;
-            @include text($ff-titles, 10rem, 12rem, 400, $copyright);
+            @include text($ff-titles, 10rem, 12rem, 400, $color-primary);
             position: relative;
             top: 3rem;
         }

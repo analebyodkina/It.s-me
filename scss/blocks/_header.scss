@@ -39,7 +39,7 @@
             transition: $transition;                
             &:hover {
                 path, circle{
-                    stroke: $color-icons;
+                    stroke: $color-primary;
                 }
             }
             @include mobile-576 {
