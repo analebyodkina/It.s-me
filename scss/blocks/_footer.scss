@@ -79,15 +79,14 @@
             align-self: initial;
         }
         a {
-            max-height: 15rem;
+            // max-height: 15rem;
             align-self: flex-start; 
             position: relative;
             bottom: 1rem;
         }        
         img {
-            object-fit: contain;
-            // width: 124px;
-            max-height: 15rem;
+            object-fit: contain;            
+            // max-height: 15rem;
             object-fit: contain;
             align-self: flex-start;  
             @include mobile-576 {
