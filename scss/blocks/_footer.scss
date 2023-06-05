@@ -85,6 +85,8 @@
             bottom: 1rem;
         }        
         img {
+            object-fit: contain;
+            // width: 124px;
             max-height: 15rem;
             object-fit: contain;
             align-self: flex-start;  
@@ -99,7 +101,7 @@
             margin-left: auto;
             @include text($ff-titles, 10rem, 12rem, 400, $color-primary);
             position: relative;
-            top: 3rem;
+            top: 5rem;
         }
     }
 }
