@@ -71,6 +71,7 @@
         max-width: 274rem;
     }
     &__copyright {
+        padding-bottom: 10rem;
         display: flex;              
         align-self: flex-end;
         @include text($ff-titles, 16rem, 19rem, 400, $color-primary);
@@ -86,8 +87,7 @@
         }        
         img {
             object-fit: contain;            
-            // max-height: 15rem;
-            object-fit: contain;
+            // max-height: 15rem;            
             align-self: flex-start;  
             @include mobile-576 {
                 max-width: 71rem;
