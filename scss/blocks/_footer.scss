@@ -80,14 +80,12 @@
             align-self: initial;
         }
         a {
-            
+            display: block;
             align-self: flex-start; 
             position: relative;
             bottom: 1rem;
         }        
-        img {
-                       
-                       
+        img {          
             align-self: flex-start;  
             @include mobile-576 {
                 max-width: 71rem;
