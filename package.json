@@ -1,0 +1,22 @@
+{
+  "name": "its_me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/analebyodkina/It.s-me.git"
+  },
+  "author": "AL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/analebyodkina/It.s-me/issues"
+  },
+  "homepage": "https://github.com/analebyodkina/It.s-me#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
