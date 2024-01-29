@@ -447,7 +447,7 @@ button {
     align-items: center;
     padding-left: 19rem; }
     .header__ul li a:before {
-      content: url("../img/icons/list-icon.svg");
+      content: url(../img/icons/list-icon.svg);
       display: inline-block;
       position: absolute;
       padding-right: 8rem;
