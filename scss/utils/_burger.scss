@@ -19,13 +19,16 @@
             align-items: center;
             padding-left: 19rem;
             &:before {
-                content: url(../img/icons/list-icon.svg);
+                // content: url(../img/icons/list-icon.svg);
+                content: " ";
+                background: url(../img/icons/list-icon.svg) 0 0/cover no-repeat;
                 display: inline-block;
                 position: absolute;
                 padding-right: 8rem;
                 width: 11rem;
                 height: 11rem;
-                top: 0;
+                top: 50%;
+                transform: translateY(-50%);
                 left: 0;
                 transition: $transition;
                 opacity: 0;              
