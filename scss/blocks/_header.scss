@@ -1,54 +1,63 @@
 .header {
-    padding: 22rem 0 10rem 0;
-    border-bottom: 1rem solid $border;    
+  padding: 22rem 0 10rem 0;
+  border-bottom: 1rem solid $border;
+  @include mobile-576 {
+    padding-top: 33rem;
+    padding-bottom: 22rem;
+    align-items: flex-start;
+  }
+  &__container {
+    @include flex-between;
+    position: relative;
+  }
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    cursor: pointer;
+    span {
+      display: block;
+      border-bottom: 2rem solid $color-primary;
+      &:first-child {
+        width: 56rem;
+      }
+      &:last-child {
+        width: 28rem;
+      }
+    }
+  }
+  .header__socials {
+    display: flex;
+    gap: 24rem;
+    transition: $transition;
     @include mobile-576 {
-        padding-top: 33rem; 
-        padding-bottom: 22rem;
-        align-items: flex-start        
-    }     
-    &__container {
-        @include flex-between;
-        position: relative;
+      gap: 16rem;
     }
-    &__burger {
-        display: flex;
-        flex-direction: column;
-        gap: 15rem;
-        cursor: pointer;
-        span {
-            display: block;
-            border-bottom: 2rem solid $color-primary;
-            &:first-child {
-                width: 56rem;
-            }
-            &:last-child {
-                width: 28rem;
-            }
+    svg {
+      max-width: 30rem;
+      max-height: 30rem;
+      transition: $transition;
+
+      @include mobile-576 {
+        max-width: 25rem;
+        max-height: 25rem;
+      }
+    }
+    svg path,
+    svg circle {
+      stroke: $color-text;
+    }
+  }
+}
+@media (hover: hover) {
+  .header__socials {
+    svg {
+      &:hover {
+        path,
+        circle {
+          stroke: $color-primary;
         }
+      }
     }
-    .header__socials {
-        display: flex;
-        gap: 24rem;
-        transition: $transition;
-        @include mobile-576 {
-            gap: 16rem;
-        }                
-        svg {
-            max-width: 30rem;
-            max-height: 30rem;
-            transition: $transition;                
-            &:hover {
-                path, circle{
-                    stroke: $color-primary;
-                }
-            }
-            @include mobile-576 {
-                max-width: 25rem;
-                max-height: 25rem;
-            }                               
-        }
-        svg path, svg circle{
-            stroke: $color-text;
-        }                        
-    }
+  }
 }

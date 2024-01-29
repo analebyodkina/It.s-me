@@ -1,35 +1,39 @@
 .reflections-section {
-    padding: 120rem 0;
-    background: $bg-add;
-    @include tablet-992 {
-        padding: 56rem 0;
+  padding: 120rem 0;
+  background: $bg-add;
+  @include tablet-992 {
+    padding: 56rem 0;
+  }
+  &__item {
+    margin: 3rem;
+    padding: 32rem;
+    background: $card-bg;
+    border: 1px solid $card-border;
+    display: flex;
+    flex-direction: column;
+    transition: $transition;
+  }
+  &__image {
+    margin-bottom: 24rem;
+  }
+  &__slogan {
+    @include text($ff-titles, 16rem, 16rem, 700, $color-primary);
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    margin-bottom: 16rem;
+  }
+  &__desc {
+    flex-grow: 1;
+  }
+
+  &__link {
+    @include text($ff, 16rem, 26rem, 400, $color-grey-light);
+  }
+}
+@media (hover: hover) {
+  .reflections-section__item {
+    &:hover {
+      box-shadow: 0rem 0rem 4rem #653570;
     }
-    &__item {
-        margin: 3rem;
-        padding: 32rem;
-        background: $card-bg;
-        border: 1px solid $card-border;
-        display: flex;        
-        flex-direction: column;        
-        transition: $transition; 
-        &:hover {
-            box-shadow: 0rem 0rem 4rem #653570;           
-        }          
-    }
-    &__image {
-        margin-bottom: 24rem;       
-    }
-    &__slogan {
-        @include text($ff-titles, 16rem, 16rem, 700, $color-primary);    
-        letter-spacing: 0.1em;    
-        text-transform: capitalize;
-        margin-bottom: 16rem;
-    }
-    &__desc {
-        flex-grow: 1;
-    }
-    
-    &__link {
-        @include text($ff, 16rem, 26rem, 400, $color-grey-light);        
-    }    
+  }
 }

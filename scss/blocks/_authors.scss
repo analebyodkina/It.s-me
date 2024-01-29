@@ -1,55 +1,59 @@
 .authors {
-    background: $bg-add;    
-    &__container {
-        width: 100%;
-        @include flex-between;
-        gap: 56rem;
-        padding-bottom: 120rem;
-        @include tablet-992 {
-            gap: 32rem;
-            align-items: flex-start; 
-            padding-bottom: 56rem; 
-        }  
+  background: $bg-add;
+  &__container {
+    width: 100%;
+    @include flex-between;
+    gap: 56rem;
+    padding-bottom: 120rem;
+    @include tablet-992 {
+      gap: 32rem;
+      align-items: flex-start;
+      padding-bottom: 56rem;
     }
-    &__image {        
-        @include tablet-992 {
-            display: none;
-        }
+  }
+  &__image {
+    @include tablet-992 {
+      display: none;
     }
-    &__info {
-        display: flex;
-        gap: 56rem;
-         @include tablet-992 {
-            flex-direction: column;
-            gap: 16rem;
-        }
+  }
+  &__info {
+    display: flex;
+    gap: 56rem;
+    @include tablet-992 {
+      flex-direction: column;
+      gap: 16rem;
     }
-    &__item {
-        display: flex;
-        flex-direction: column;
-        gap: 8rem;
-    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
 
-    &__name {               
-        transition: $transition;         
-        a {
-            transition: $transition;
-            @include text($ff, 20rem, 30rem, 500, $color-primary);
-            border-bottom: 1.5rem solid transparent; 
-            @include tablet-992 {
-                @include text($ff, 16rem, 24rem, 500, $color-primary);
-            } 
-        }
-        &:hover {
-            a {
-                border-bottom: 1.5rem solid $color-primary;
-            }
-        }
+  &__name {
+    transition: $transition;
+    a {
+      transition: $transition;
+      @include text($ff, 20rem, 30rem, 500, $color-primary);
+      border-bottom: 1.5rem solid transparent;
+      @include tablet-992 {
+        @include text($ff, 16rem, 24rem, 500, $color-primary);
+      }
+    }    
+  }
+  &__desc {
+    @include text($ff, 18rem, 27rem, 500, $color-text);
+    @include tablet-992 {
+      @include text($ff, 14rem, 21rem, 500, $color-text);
     }
-    &__desc {
-        @include text($ff, 18rem, 27rem, 500, $color-text);        
-        @include tablet-992 {
-            @include text($ff, 14rem, 21rem, 500, $color-text);
-        }
+  }
+}
+@media (hover: hover) {
+  .authors__name {
+    &:hover {
+      a {
+        border-bottom: 1.5rem solid $color-primary;
+      }
     }
+  }
 }

@@ -1,79 +1,85 @@
 .main-section {
-    position: relative;
-    height: 100%;    
-    &__container {        
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 221rem 15rem 36rem 15rem;
-        @include mobile-576 {
-            padding: 401rem 32rem 0 32rem;                               
-        }
+  position: relative;
+  height: 100%;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 221rem 15rem 36rem 15rem;
+    @include mobile-576 {
+      padding: 401rem 32rem 0 32rem;
     }
-    &__logo {
-        margin-bottom: 32rem;
-        display: inline-block;
-        @include mobile-576 {
-            width: 303rem;            
-            margin-bottom: 0rem;
-            padding-right: 80rem;
-            transform: rotate(-90deg);
-            position: absolute;
-            left: -78rem; 
-            top: 116rem;                              
-        }
+  }
+  &__logo {
+    margin-bottom: 32rem;
+    display: inline-block;
+    @include mobile-576 {
+      width: 303rem;
+      margin-bottom: 0rem;
+      padding-right: 80rem;
+      transform: rotate(-90deg);
+      position: absolute;
+      left: -78rem;
+      top: 116rem;
     }
-    &__desc {
-        @include text($ff, 18rem, 29rem, 400, $color-text);        
-        margin-bottom: 32rem;
-        max-width: 540rem;
-        @include mobile-576 {
-            max-width: 280rem;
-            @include text($ff, 16rem, 26rem, 400, $color-text);
-            margin-bottom: 0;                    
-        }
+  }
+  &__desc {
+    @include text($ff, 18rem, 29rem, 400, $color-text);
+    margin-bottom: 32rem;
+    max-width: 540rem;
+    @include mobile-576 {
+      max-width: 280rem;
+      @include text($ff, 16rem, 26rem, 400, $color-text);
+      margin-bottom: 0;
     }
-    &__img {
-        display: inline-block;
-		position: absolute;
-		right: 0;
-		top: 0;	
-        z-index: -1;
-        max-width: 850rem;
-        @include tablet-small-768{
-            img {            
-                filter: brightness(90%)	
-            }
-        }	
+  }
+  &__img {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    max-width: 850rem;
+    @include tablet-small-768 {
+      img {
+        filter: brightness(90%);
+      }
     }
-    &__btn {
-        width: 369rem;
-        height: 197rem;      
-        transition: $transition;
-        display: flex;
-        align-items: center; 
-        margin-left: 93rem;
-        &:hover {            
-            svg {
-                display: none;
-            }
-            .btn-hover {
-                display: inline-block;
-            }
-        }
-        @include tablet-992 {
-            width: 295rem;
-            height: 195rem;
-            margin-left: 0;            
-            svg {
-                max-width: 271rem;
-                position: relative;                
-                left: 4rem;
-            }
-        }
+  }
+  &__btn {
+    width: 369rem;
+    height: 197rem;
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    margin-left: 93rem;
+
+    @include tablet-992 {
+      width: 295rem;
+      height: 195rem;
+      margin-left: 0;
+      svg {
+        max-width: 271rem;
+        position: relative;
+        left: 4rem;
+      }
     }
+  }
 }
 .btn-hover {
-    display: none;    
+  display: none;
+  transition: $transition;
+}
+@media (hover: hover) {
+  .main-section__btn {
+    &:hover {
+      svg {
+        display: none;
+      }
+      .btn-hover {
+        display: inline-block;
+      }
+    }
+  }
 }

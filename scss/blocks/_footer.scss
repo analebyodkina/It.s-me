@@ -1,104 +1,111 @@
 .footer {
-    padding: 59rem 0 40rem 0;
-    border-top: 1rem solid $border;
-    background: $bg-add;
+  padding: 59rem 0 40rem 0;
+  border-top: 1rem solid $border;
+  background: $bg-add;
+  @include tablet-992 {
+    padding: 31rem 0;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
     @include tablet-992 {
-        padding: 31rem 0; 
-    }    
-    &__container {
-        display: flex;
-        flex-direction: column;
-        gap: 32rem;
-        @include tablet-992 {
-            gap: 28rem;
+      gap: 28rem;
+    }
+  }
+  &__body {
+    display: flex;
+    gap: 72rem;
+    @include tablet-992 {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  &__logo {
+    max-width: 124rem;
+    img {
+      height: auto;
+    }
+    @include tablet-992 {
+      max-width: 80rem;
+      margin-bottom: 8rem;
+    }
+  }
+  &__ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 66rem;
+    row-gap: 16rem;
+    @include mobile-576 {
+      column-gap: 50rem;
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 24rem;
+    svg {
+      max-width: 40rem;
+      height: auto;
+      transition: $transition;
+
+      @include mobile-576 {
+        max-width: 25rem;
+      }
+    }
+  }
+  &__title {
+    @include text($ff-titles, 24rem, 24rem, 700, $color-primary);
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+    @include mobile-576 {
+      @include text($ff-titles, 16rem, 16rem, 700, $color-primary);
+    }
+  }
+  &__image {
+    max-width: 274rem;
+  }
+  &__copyright {
+    padding-bottom: 10rem;
+    display: flex;
+    align-self: flex-end;
+    @include text($ff-titles, 16rem, 19rem, 400, $color-primary);
+    text-transform: uppercase;
+    @include tablet-992 {
+      align-self: initial;
+    }
+    a {
+      display: block;
+      align-self: flex-start;
+      position: relative;
+      bottom: 1rem;
+    }
+    img {
+      align-self: flex-start;
+      @include mobile-576 {
+        max-width: 71rem;
+      }
+    }
+  }
+  &__design {
+    margin: 0 8rem 0 22rem;
+    @include tablet-992 {
+      margin-left: auto;
+      @include text($ff-titles, 10rem, 12rem, 400, $color-primary);
+      position: relative;
+      top: 5rem;
+    }
+  }
+}
+@media (hover: hover) {
+  .footer__socials {
+    svg {
+      &:hover {
+        path,
+        circle {
+          stroke: $color-text;
         }
+      }
     }
-    &__body {
-        display: flex;
-        gap: 72rem;
-        @include tablet-992 {
-            flex-direction: column;
-            gap: 15px;
-        }
-    }
-    &__logo {
-        max-width: 124rem;        
-        img {
-            height: auto; 
-        }
-        @include tablet-992 {
-            max-width: 80rem;
-            margin-bottom: 8rem;
-        }        
-    }
-    &__ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);               
-        column-gap: 66rem;
-        row-gap: 16rem;
-        @include mobile-576 {
-            column-gap: 50rem;
-        }        
-    }
-    &__socials {
-        display: flex;
-        align-items: center;
-        gap: 24rem;
-        svg {
-            max-width: 40rem;
-            height: auto;
-            transition: $transition;
-            &:hover {
-                path, circle{
-                    stroke: $color-text;
-                }
-            }
-            @include mobile-576 {
-                max-width: 25rem;
-                
-            }            
-        }
-    }
-    &__title {
-        @include text($ff-titles, 24rem, 24rem, 700, $color-primary);        
-        letter-spacing: 0.1em;
-        flex-shrink: 0;
-        @include mobile-576 {
-            @include text($ff-titles, 16rem, 16rem, 700, $color-primary);
-        }        
-    }
-    &__image {
-        max-width: 274rem;
-    }
-    &__copyright {
-        padding-bottom: 10rem;
-        display: flex;              
-        align-self: flex-end;
-        @include text($ff-titles, 16rem, 19rem, 400, $color-primary);
-        text-transform: uppercase;
-        @include tablet-992 {
-            align-self: initial;
-        }
-        a {
-            display: block;
-            align-self: flex-start; 
-            position: relative;
-            bottom: 1rem;
-        }        
-        img {          
-            align-self: flex-start;  
-            @include mobile-576 {
-                max-width: 71rem;
-            }
-        }
-    }
-    &__design {
-        margin: 0 8rem 0 22rem;
-        @include tablet-992 {
-            margin-left: auto;
-            @include text($ff-titles, 10rem, 12rem, 400, $color-primary);
-            position: relative;
-            top: 5rem;
-        }
-    }
+  }
 }

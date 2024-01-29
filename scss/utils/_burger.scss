@@ -1,52 +1,51 @@
-    .header__ul {
-        position: absolute;
-        left: 0; 
-        top: 30rem;      
-        padding-left: 88rem;              
-        transition: $transition;
-        display: flex;
-        flex-direction: column;
-        gap: 16rem;
-        opacity: 0;
-              
-        li a{
-            @include text($ff, 16rem, 24rem, 400, $burger-links);            
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            transition: $transition;
-            position: relative;
-            display: flex;
-            align-items: center;
-            padding-left: 19rem;
-            &:before {
-                // content: url(../img/icons/list-icon.svg);
-                content: " ";
-                background: url(../img/icons/list-icon.svg) 0 0/cover no-repeat;
-                display: inline-block;
-                position: absolute;
-                padding-right: 8rem;
-                width: 11rem;
-                height: 11rem;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 0;
-                transition: $transition;
-                opacity: 0;              
-            } 
-                       
-            &:hover {
-                color: $color-primary;
-                &:before {
-                    opacity: 1;
-                }
-            }
-        }
+.header__ul {
+  position: absolute;
+  left: 0;
+  top: 30rem;
+  padding-left: 88rem;
+  transition: $transition;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  opacity: 0;
+
+  li a {
+    @include text($ff, 16rem, 24rem, 400, $burger-links);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: $transition;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 19rem;
+    &:before {
+      // content: url(../img/icons/list-icon.svg);
+      content: " ";
+      background: url(../img/icons/list-icon.svg) 0 0 / cover no-repeat;
+      display: inline-block;
+      position: absolute;
+      padding-right: 8rem;
+      width: 11rem;
+      height: 11rem;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      transition: $transition;
+      opacity: 0;
     }
-    .header__ul.active {
+  }
+}
+.header__ul.active {
+  opacity: 1;
+  z-index: 999;
+}
+@media (hover: hover) {
+  .header__ul li a {
+    &:hover {
+      color: $color-primary;
+      &:before {
         opacity: 1;
-        z-index: 999;
+      }
     }
-   
-   
-
-
+  }
+}
